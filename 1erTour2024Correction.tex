@@ -1,0 +1,417 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+
+\begin{minipage}{0.8\textwidth}
+	Pathé BA                          
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+	BAC 2024
+\end{minipage}
+
+\begin{center}
+\textbf{{\underline{\textcolor{green}{Premier Groupe Correction}}}}
+\end{center}
+\section*{\textcolor{green}{\underline{Exercice 1} (5 points) :}}
+\begin{enumerate}
+\item
+\textbf{Module et argument}
+\begin{enumerate}
+\item Calculons \(z_C - z_B\) et \(z_A - z_B\).
+
+\begin{align*}
+    z_C - z_B &= (1 + 2i) - (-2) \\
+              &= 1 + 2i + 2 \\
+              &= 3 + 2i
+\end{align*}
+
+\begin{align*}
+    z_A - z_B &= (-3i) - (-2) \\
+              &= -3i + 2 \\
+              &= 2 - 3i
+\end{align*}
+
+Calculons le quotient :
+
+\[
+\frac{z_C - z_B}{z_A - z_B} = \frac{3 + 2i}{2 - 3i}=i
+\]
+
+	\textbf{Module} :
+\[
+\frac{z_C - z_B}{z_A - z_B} = \frac{3 + 2i}{2 - 3i}=i\textbf{ 0,25 pt}
+\]
+
+\[
+\textcolor{green}{\boxed{\mid\frac{z_C - z_B}{z_A - z_B}\mid = |i|=1}}\textbf{ 0,25 pt}
+\]
+
+	\textbf{Argument} :
+
+\[
+\textcolor{green}{\boxed{\arg(\frac{z_C - z_B}{z_A - z_B})=\arg(i) = \frac{\pi}{2}}}\textbf{ 0,25 pt}
+\]
+
+\textbf{Conclusion}
+
+\textcolor{green}{Le module du quotient \(\frac{z_C - z_B}{z_A - z_B}\) est \(1\) et un argument est \(\frac{\pi}{2}\)}.
+\item \textbf{Nature du triangle ABC.}
+
+$\mid\frac{z_C - z_B}{z_A - z_B}\mid=1 \implies \frac{BC}{BA}\mid=1\implies BC=BA$
+\begin{align*}
+\arg\left( \frac{z_C - z_B}{z_A - z_B}\right) &=\arg\left( z_C - z_B \right) - \arg\left( z_A - z_B \right)\\
+&=\left( \vec{u}, \overrightarrow{BC} \right)-\left( \vec{u}, \overrightarrow{BA} \right)\\
+&=\left( \overrightarrow{BA}, \vec{u} \right)+\left( \vec{u}, \overrightarrow{BC} \right)\\
+&=\left( \overrightarrow{BA}, \overrightarrow{BC} \right)\\
+&=\frac{\pi}{2}
+\end{align*}
+\[
+\textcolor{green}{\boxed{\left( \overrightarrow{BA}, \overrightarrow{BC} \right)=\frac{\pi}{2}}}\textbf{ 0,25 pt}
+\]
+\textbf{Conclusion}
+
+\textcolor{green}{Comme  BA=BC et $\left( \overrightarrow{BA}, \overrightarrow{BC} \right)=\frac{\pi}{2}$}
+
+\textcolor{green}{ABC est un triangle rectangle et isocèle en B}.\textbf{ 0,25 pt $\times$ 3}
+
+\item Déterminons l'affixe de $Z_{D}$
+
+Comme  BADC est un carré donc $\overrightarrow{BA}=\overrightarrow{CD}$
+
+$\overrightarrow{BA}=\overrightarrow{CD}\implies Z_{A}-Z_{B}=Z_{D}-Z_{C}\implies Z_{D}=Z_{A}-Z_{B}+Z_{C}\implies Z_{D}=3-i$
+
+\[
+\textcolor{green}{\boxed{Z_{D}=3-i}}\textbf{ 0,5 pt}
+\]
+
+\item Montrons que les points A, B, C et D appartiennent à un même cercle dont on précisera le centre et le rayon.
+\begin{itemize}
+\item \[
+\text{A, B, C et D appartiennent à un même cercle si :}\left({\overrightarrow {CA}},{\overrightarrow {CB}}\right)=\left({\overrightarrow {DA}},{\overrightarrow {DB}}\right)\mod \pi 
+\]
+\textbf{ou}
+\item \[
+\text{A, B, C et D appartiennent à un même cercle si :}\arg \left({\frac {c-b}{c-a}}\right)=\arg \left({\frac {d-b}{d-a}}\right)\mod \pi
+\]
+\textbf{ou}
+\item \[
+\text{A, B, C et D appartiennent à un même cercle si :}\left[ a,b,c,d \right] =\left({\frac {c-b}{c-a}}\right):\left({\frac {d-b}{d-a}}\right) \text{est réel}
+\]
+\end{itemize}
+\begin{center}
+\textbf{Application :}
+\end{center}
+\begin{itemize}
+\item 
+\[
+\left({\overrightarrow {CA}},{\overrightarrow {CB}}\right)=\left({\overrightarrow {DA}},{\overrightarrow {DB}}\right)\mod \pi 
+\]
+\textbf{ou}
+\item 
+\[
+\arg \left({\frac {c-b}{c-a}}\right)=\arg \left({\frac {d-b}{d-a}}\right)\mod \pi
+\]
+
+\[
+\arg \left({\frac {1+2i-(-2)}{1+2i-(-3i)}}\right)=\arg \left({\frac {3-i-(-2)}{3-i-(-3i)}}\right)\mod \pi
+\]
+
+\[
+\arg \left({\frac {3+2i}{1+5i}}\right)=\arg \left({\frac {5-i}{3+2i}}\right)\mod \pi
+\]
+
+\[
+\arg \left(3+2i\right)-\arg\left(1+5i\right)=\arg \left(5-i\right)-\arg\left(3+2i\right)\mod \pi
+\]
+\textbf{ou}
+\item 
+\[
+\text{A, B, C et D appartiennent à un même cercle si :}\left[ a,b,c,d \right] =\left({\frac {c-b}{c-a}}\right):\left({\frac {d-b}{d-a}}\right) \text{est réel}
+\]
+
+\begin{align*}
+\left({\frac {c-b}{c-a}}\right):\left({\frac {d-b}{d-a}}\right)&=\frac {3+2i}{1+5i} \div \frac {5-i}{3+2i}\\
+																&=\frac {3+2i}{1+5i}\times \frac {3+2i}{5-i}\\																		&=\frac {(3+2i)^{2}}{(1+5i)(5-i)}\\
+																&=\frac {9-4+24i}{5-i+25i+5}\\
+																&=\frac {5+12i}{10+24i}\\
+																&=\frac {5+12i}{2(5+12i)}\\
+																&=\frac {1}{2}
+\end{align*}
+\[
+\textcolor{green}{\boxed{\left({\frac {c-b}{c-a}}\right):\left({\frac {d-b}{d-a}}\right)=\frac {1}{2}}}\textbf{ 0,25 pt}
+\]
+\[
+\textcolor{green}{\textbf{Donc A, B, C et D sont sur le même cerlce}}
+\]
+
+Comme BADC est un carré et que A, B, C et D sont sur un même cerlce donc [BD] est un diamètre ce cercle. 
+
+Un rayon est de ce cercle $r=IB=\frac{BD}{2}$ où I est le centre de ce cerlce
+
+
+\begin{align*}
+BD&=|z_{D}-z_{B}|\\
+	&=|3-i-(-2)|\\
+	&=|5-i|\\
+	&=\sqrt{26}
+\end{align*}
+\[\text{donc }r=IB=\frac{BD}{2}=\frac{\sqrt{26}}{2}\textbf{ 0,25 pt}\]
+\end{itemize}
+\[Z_{I}=\frac{Z_{D}+Z_{B}}{2}=\frac{3-i+(-2)}{2}=\frac{1-i}{2}=\frac{1}{2}-\frac{1}{2}i \textbf{ 0,25 pt}\]
+\[Z_{I}=\frac{1}{2}-\frac{1}{2}i\]
+Finalement, A, B, C et D sont sur un même cercle $\mathcal{C}\left(I\begin{pmatrix} \frac{1}{2} \\ -\frac{1}{2}\end{pmatrix}\;;\ \frac{\sqrt{26}}{2}\right)$
+\end{enumerate}
+\item 
+\begin{enumerate}
+\item Montrer $z'=(1+i)z+2-i$ \textbf{ 0,5 pt}
+\[\begin{cases}
+x'=x-y+2\\
+y'=x+y-1
+\end{cases}\]
+\item Elements caractéristiques
+$\theta=\frac{\pi}{4}; k=\sqrt{2}; \omega=1+2i$ \textbf{ 0,25 pt $\times$ 2}
+\item Image de (D): $x+y+1=0$
+
+Soit  
+\[
+\begin{cases}
+E\begin{pmatrix} -1 \\ 
+0\end{pmatrix}\in (D)\\ \\
+E\begin{pmatrix} 0 \\ -1\end{pmatrix}\in (D)
+\end{cases} \implies 
+\begin{cases}
+E\begin{pmatrix} -3 \\ -2\end{pmatrix}\\ \\
+E\begin{pmatrix} 1 \\ -2\end{pmatrix}
+\end{cases}
+\]
+(D') est la droite (E'F'): y=-2 $\textbf{0,5}$
+\item Ensemble des point M
+$\mid (1+i)z+z-i\mid=2 \implies \mid z+\frac{2-i}{1+i}\mid=\sqrt{2}$
+
+Donc $\mid z-(\frac{-1}{2}+\frac{3}{2}i)\mid$ Ainsi,$ C\left( k\begin{pmatrix} \frac{-1}{2} \\ \frac{3}{2}\end{pmatrix}, \sqrt{2}\right) $
+\end{enumerate}
+\end{enumerate}
+
+
+\section*{\textcolor{green}{\underline{Exercice 2} (5 points) :}}
+
+Une entreprise fabrique des articles dans deux unités de production notées \( U_1 \) et \( U_2 \). L’unité \( U_1 \) assure 60\% de la production.
+
+On a constaté que :
+
+- 3\% des articles provenant de l’unité \( U_1 \) présentent un défaut de fabrication.
+
+- 8\% des articles provenant de l’unité \( U_2 \) présentent un défaut de fabrication.
+
+L’entreprise envisage de mettre en place un test de contrôle de ces articles avant leur mise en vente. Ce contrôle détecte et élimine 82\% des articles défectueux, mais il élimine également à tort 4\% des articles non défectueux. Les articles non éliminés sont alors mis en vente.
+
+L’entreprise souhaite que moins de 1\% des articles vendus soient défectueux.
+
+À l’aide des informations ci-dessus et des outils mathématiques au programme :
+\begin{enumerate}
+    \item Démontrer que 5\% des articles produits présentent un défaut de fabrication. \textbf{(02 points)}
+    \item En prenant au hasard un article fabriqué, montrer que la chance que cet article soit mis en vente après contrôle est de 0,921. \textbf{(02 points)}
+    \item Vérifier si ce contrôle permet à l’entreprise de réaliser son souhait. \textbf{(01 point)}
+\end{enumerate}
+
+\section*{\textcolor{green}{\underline{Correction Exercice 2} (5 points) :}}
+$P_{U_{1}}(D)=\frac{60}{100}=\frac{3}{5}$
+
+$P_{U_{1}}(D)=\frac{60}{100}=\frac{3}{5}$
+
+\begin{center}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+%\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-8.3,-6.45) grid (15.34,5.57);
+%\clip(-8.3,-6.45) rectangle (15.34,5.57);
+\draw [line width=2pt] (-4,0)-- (0,2);
+\draw [line width=2pt] (0,2)-- (3,4);
+\draw [line width=2pt] (0,2)-- (3,0);
+\draw [line width=2pt] (-4,0)-- (0,-2);
+\draw [line width=2pt] (3,-1)-- (0,-2);
+\draw [line width=2pt] (0,-2)-- (3,-4);
+\begin{scriptsize}
+\draw [fill=ududff] (0,2) circle (2.5pt);
+\draw[color=ududff] (0.16,2.42) node {$U_{1}$};
+\draw[color=black] (-1.78,2) node {$60\%$};
+\draw [fill=ududff] (3,4) circle (2.5pt);
+\draw[color=ududff] (3.16,4.42) node {$D$};
+\draw[color=black] (1.74,3.5) node {$3\%$};
+\draw [fill=ududff] (3,0) circle (2.5pt);
+\draw[color=ududff] (3.16,0.42) node {$\overline{D}$};
+\draw[color=black] (1.4,0.8) node {$97\%$};
+\draw [fill=ududff] (0,-2) circle (2.5pt);
+\draw[color=ududff] (0.16,-1.58) node {$U_{2}$};
+\draw[color=black] (-2.08,-1.5) node {$40\%$};
+\draw [fill=ududff] (3,-1) circle (2.5pt);
+\draw[color=ududff] (3.16,-0.58) node {$D$};
+\draw[color=black] (1.46,-0.96) node {$8\%$};
+\draw [fill=ududff] (3,-4) circle (2.5pt);
+\draw[color=ududff] (3.16,-3.58) node {$\overline{D}$};
+\draw[color=black] (1.4,-3.5) node {$92\%$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\begin{align*}
+	P(D)&=P(U_{1}\cap D)+P(U_{2}\cap D)\\
+		&=P(U_{1})\times P_{U_{1}}(D)+P(U_{2})\times P_{U_{2}}(D)\\
+		&=0,03\times 0,6+0,08\times 0,4\\
+		&=0,05
+\end{align*}
+\begin{center}
+\boxed{P(D)=0,05}
+\end{center}
+2)
+% Données
+ 
+% Le contrôle détecte et élimine 82% des articles défectueux.
+% Le contrôle élimine également à tort 4% des articles non défectueux.
+% 5% des articles produits sont défectueux.
+
+\textbf{Données :}
+\begin{itemize}
+    \item La probabilité qu'un article soit défectueux (\(D\)) est \(0,05\).
+    \item La probabilité qu'un article soit non défectueux (\(\overline{D}\)) est \(0,95\).
+\end{itemize}
+
+\textbf{Probabilités conditionnelles :}
+\begin{itemize}
+    \item La probabilité qu'un article défectueux soit éliminé (\(E\)) : \(P(E|D) = 0,82\).
+    \item La probabilité qu'un article non défectueux soit éliminé : \(P(E|\overline{D}) = 0,04\).
+\end{itemize}
+\begin{center}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+%\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-8.3,-6.45) grid (15.34,5.57);
+%\clip(-8.3,-6.45) rectangle (15.34,5.57);
+\draw [line width=2pt] (-4,0)-- (0,2);
+\draw [line width=2pt] (0,2)-- (3,4);
+\draw [line width=2pt] (0,2)-- (3,0);
+\draw [line width=2pt] (-4,0)-- (0,-2);
+\draw [line width=2pt] (3,-1)-- (0,-2);
+\draw [line width=2pt] (0,-2)-- (3,-4);
+\begin{scriptsize}
+\draw [fill=ududff] (0,2) circle (2.5pt);
+\draw[color=ududff] (0.16,2.42) node {$D$};
+\draw[color=black] (-1.78,2) node {$0,05\%$};
+\draw [fill=ududff] (3,4) circle (2.5pt);
+\draw[color=ududff] (3.16,4.42) node {$E$};
+\draw[color=black] (1.74,3.5) node {$0,82\%$};
+\draw [fill=ududff] (3,0) circle (2.5pt);
+\draw[color=ududff] (3.16,0.42) node {$\overline{E}$};
+\draw[color=black] (1.4,0.8) node {$...$};
+\draw [fill=ududff] (0,-2) circle (2.5pt);
+\draw[color=ududff] (0.16,-1.58) node {$D$};
+\draw[color=black] (-2.08,-1.5) node {$0,95\%$};
+\draw [fill=ududff] (3,-1) circle (2.5pt);
+\draw[color=ududff] (3.16,-0.58) node {$E$};
+\draw[color=black] (1.46,-0.96) node {$0,04\%$};
+\draw [fill=ududff] (3,-4) circle (2.5pt);
+\draw[color=ududff] (3.16,-3.58) node {$\overline{E}$};
+\draw[color=black] (1.4,-3.5) node {$...$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\textbf{Probabilités complémentaires :}
+\begin{itemize}
+    \item La probabilité qu'un article défectueux ne soit pas éliminé (\(\overline{E}\)) : 
+    \[
+    P(\overline{E}|D) = 1 - P(E|D) = 1 - 0,82 = 0,18
+    \]
+    \item La probabilité qu'un article non défectueux ne soit pas éliminé : 
+    \[
+    P(\overline{E}|\overline{D}) = 1 - P(E|\overline{D}) = 1 - 0,04 = 0,96
+    \]
+\end{itemize}
+
+\textbf{Probabilité totale qu'un article soit mis en vente (\(\overline{E}\)) :}
+\[
+P(\overline{E}) = P(\overline{E}|D) \times P(D) + P(\overline{E}|\overline{D}) \times P(\overline{D})
+\]
+
+%En substituant les valeurs :
+%\[
+%P(\overline{E}) = 0.18 \times 0.05 + 0.96 \times 0.95
+%\]
+
+%\[
+%P(\overline{E}) = 0.009 + 0.912
+%\]
+
+\begin{center}
+\textcolor{green}{\boxed{P(\overline{E}) = 0.921}}
+\end{center}
+
+\textbf{Conclusion :} La probabilité qu'un article pris au hasard soit mis en vente après contrôle est de \(0,921\).
+
+3. Vérifier si ce contrôle permet à l’entreprise de réaliser son souhait. \textbf{(01 point)}
+    
+    Nous avons déjà déterminé que la probabilité qu'un article soit mis en vente après contrôle est de 0,921. Maintenant, nous devons calculer la probabilité qu'un article vendu soit défectueux, compte tenu du contrôle.
+
+    \textbf{Probabilité qu'un article vendu soit défectueux:}
+
+    \[
+    P_{\overline{E}}(\text{D}) = \frac{P(\text{D}) \times P_{D}(\overline{E})}{P(\overline{E})}
+    \]
+
+    Nous savons que:
+    \[
+    P(\text{D}) = 0.05
+    \]
+    \[
+    P_{D}(\overline{E}) = 0.18
+    \]
+    \[
+    P(\overline{E}) = 0.921
+    \]
+
+    En substituant ces valeurs:
+
+    \[
+    P_{\overline{E}}(\text{D}) = \frac{0.05 \times 0.18}{0.921}
+    \]
+
+    Calculons le numérateur:
+
+    \[
+    0.05 \times 0.18 = 0.009
+    \]
+
+    Ensuite, divisons par \(P(\text{ V})\):
+
+    \[
+    P_{\overline{E}}(\text{D}) = \frac{0.009}{0.921} \approx 0.00977
+    \]
+
+    Donc, la probabilité qu'un article vendu soit défectueux est environ \(0.00977\), ce qui représente environ \(0.977\%\).
+
+    Étant donné que \(0.977\%\) est inférieur à \(1\%\), cela signifie que ce contrôle permet à l'entreprise de réaliser son souhait de vendre moins de 1\% d'articles défectueux.
+
+\end{document}
