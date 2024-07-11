@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+
+\begin{minipage}{0.8\textwidth}
+	Pathé BA                          
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+	BAC 2024
+\end{minipage}
+
+\begin{center}
+\textbf{{\underline{\textcolor{red}{Premier Groupe Correction}}}}
+\end{center}
+\section*{\textcolor{red}{\underline{EXERCICE 1:} (5 points) :}}
+
+1. Dans le plan complexe muni d'un repère orthonormé, on considère les points A, B et C d'affixes respectives \(z_A = -3i\), \(z_B = -2\) et \(z_C = 1+2i\).
+
+\begin{enumerate}
+    \item[a.] Déterminer le module et un argument du quotient \(\frac{z_C - z_B}{z_A - z_B}\).
+    \item[b.] En déduire la nature du triangle ABC.
+    \item[c.] Déterminer l'affixe \(z_D\) du point D tel que le quadrilatère BADC soit un carré et on précisera le centre et le rayon.
+    \item[d.] Montrer que les points A, B, C et D appartiennent à un même cercle dont on précisera le centre et le rayon.
+\end{enumerate}
+
+2. On considère les points \(M\) et \(M'\) d'affixes respectives \(z = x + iy\) et \(z' = x' + iy'\) où \(x, y, x', y'\) sont des réels.
+
+Soit \(S\) l'application du plan dans le plan d'expression analytique :
+\[
+\begin{cases}
+    x' = x - y + 2 \\
+    y' = x + y - 1
+\end{cases}
+\]
+
+\begin{enumerate}
+    \item[a.] Montrer que l'écriture complexe de \(S\) est : \(z' = (1 + i)z + 2 - i\). (0,5 point)
+    \item[b.] Déterminer la nature et les éléments caractéristiques de \(S\). (0,75 point)
+    \item[c.] Déterminer l'image par \(S\) de la droite \((D)\) d'équation \(x + y + 1 = 0\). (0,5 point)
+    \item[d.] Déterminer l'ensemble des points \(M\) dont l'affixe \(z\) vérifie \(\mid(1 + i)z + 2 - i \mid= 2\). (0,5 point)
+\end{enumerate}
+\section*{\textcolor{red}{\underline{EXERCICE 2:} (5 points) :}}
+
+Une entreprise fabrique des articles dans deux unités de production notées \( U_1 \) et \( U_2 \). L’unité \( U_1 \) assure 60\% de la production.
+
+On a constaté que :
+
+- 3\% des articles provenant de l’unité \( U_1 \) présentent un défaut de fabrication.
+
+- 8\% des articles provenant de l’unité \( U_2 \) présentent un défaut de fabrication.
+
+L’entreprise envisage de mettre en place un test de contrôle de ces articles avant leur mise en vente. Ce contrôle détecte et élimine 82\% des articles défectueux, mais il élimine également à tort 4\% des articles non défectueux. Les articles non éliminés sont alors mis en vente.
+
+L’entreprise souhaite que moins de 1\% des articles vendus soient défectueux.
+
+À l’aide des informations ci-dessus et des outils mathématiques au programme :
+\begin{enumerate}
+    \item Démontrer que 5\% des articles produits présentent un défaut de fabrication. \textbf{(02 points)}
+    \item En prenant au hasard un article fabriqué, montrer que la chance que cet article soit mis en vente après contrôle est de 0,921. \textbf{(02 points)}
+    \item Vérifier si ce contrôle permet à l’entreprise de réaliser son souhait. \textbf{(01 point)}
+\end{enumerate}
+
+\end{document}
