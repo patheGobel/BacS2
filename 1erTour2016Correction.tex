@@ -1,0 +1,223 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+
+\usepackage[margin=2cm]{geometry}
+
+\begin{document}
+
+\begin{minipage}{0.8\textwidth}
+	Pathé BA                          
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+	BAC 2016
+\end{minipage}
+
+\begin{center}
+\textbf{{\underline{\textcolor{red}{Premier Groupe Correction}}}}
+\end{center}
+\section*{\textcolor{green}{\underline{Correction Exercice 2} (6 points) :}}
+À l’occasion de ses activités culturelles, le FOSCO d’un lycée organise un jeu pour le collectif des professeurs. Une urne contenant 4 boules rouges et une boule jaune indiscernables au toucher est placée dans la cour de l’école. Chaque professeur tire simultanément 2 boules de l’urne.
+
+- Si les deux boules sont de même couleur, il les remet dans l’urne et procède à un second tirage successif avec remise de 2 autres boules.
+
+- Si les deux boules sont de couleurs distinctes, il les remet toujours dans l’urne, mais dans ce cas le second tirage de 2 autres boules s’effectue successivement sans remise.
+
+\textcolor{green}{1. Calculons la probabilité des événements suivants :}
+
+\begin{itemize}
+\item \underline{\textcolor{green}{Pour l'évènement A:}}
+
+$P(A)=\frac{card(A)}{card(\Omega)}$
+
+\textcolor{green}{Cherchons $card(\Omega)$ et card(A)}
+	\begin{itemize}
+	\item \underline{Pour $card(\Omega)$}
+	\begin{align*}
+	card(\Omega)&=C_{5}^{2}\\
+			&=10
+	\end{align*}
+	
+	\begin{center}
+		\textcolor{blue}{\boxed{card(\Omega)=10}}
+	\end{center}
+	\item \underline{Pour $card(A)$}
+	
+		A : << Le professeur tire 2 boules de même couleur au premier tirage.>>
+
+		\textcolor{green}{Autrement dit}: A : << RR >>. C'est-à-dire tirer 2 rouge parmis les 4 rouges.
+
+		Donc card(A)=$C_{4}^{2}$
+
+		\begin{align*}
+			card(A)&=C_{4}^{2}\\
+					&=6
+		\end{align*}
+
+		\begin{center}
+			\textcolor{blue}{\boxed{card(A)=6}}
+		\end{center}
+	\end{itemize}
+	Ainsi, la probabilité de l'évènement A est:
+
+	$P(A)=\frac{card(A)}{card(\Omega)}=\frac{6}{10}$
+		\begin{center}
+			\textcolor{green}{\boxed{P(A)=\frac{3}{5}}}
+		\end{center}
+\item \underline{\textcolor{green}{Pour l'évènement B:}}
+
+B : << Le professeur tire deux boules de couleurs différentes au premier tirage.>>  \textbf{0,25 pt}
+			\textcolor{green}{Autrement dit}: B : << RJ >>. C'est-à-dire tirer 1 rouge parmis les 4 rouges et 1 jaune .
+
+		\begin{align*}
+			card(B)&=C_{4}^{1}\times C_{1}^{1}\\
+					&=4
+		\end{align*}
+
+		\begin{center}
+			\textcolor{blue}{\boxed{card(B)=4}}
+		\end{center}
+
+	Ainsi, la probabilité de l'évènement B est:
+
+	$P(B)=\frac{card(B)}{card(\Omega)}=\frac{4}{10}$
+		\begin{center}
+			\textcolor{green}{\boxed{P(B)=\frac{2}{5}}}
+		\end{center}
+\end{itemize}
+
+\textcolor{green}{En remarquant que les évènements A et B sont des évènements contraires, et que les évènements C, D, E et F sont dépendants soit de la réalisation de A ou de B, contruisons un arbe de probabilité.}
+
+\begin{tikzpicture}[level distance=3cm,
+  level 1/.style={sibling distance=6cm},%Ecarte les branches des 1eme ramifications
+  level 2/.style={sibling distance=2.5cm},%Ecarte les branches des  2eme ramifications
+  %level 3/.style={sibling distance=2cm}]%Ecarte les branches des 3eme ramifications
+    every node/.style={text width=2cm, align=center}]%Permet de spécifier une largeur pour chaque nœud
+  \node {}
+    child {node {$B$}
+      child {node {$RR$}    
+      }
+      child {node {$JR$}    
+      }
+    }      
+    child {node {$A$} 
+      child {node {$JR$}    
+      }
+      child {node {$JJ$}    
+      } 
+      child {node {$RR$}    
+      }
+    };
+\node at (-4,-1.5) [right] {$\frac{2}{5}$};
+\node at (1.3,-1.5) [right] {$\frac{3}{5}$};
+
+\node at (-5,-4) [right] {$\frac{12}{20}$};
+\node at (-3,-4) [right] {$\frac{8}{20}$};
+
+\node at (-0.1,-4) [right] {$\frac{8}{25}$};
+\node at (1.5,-5.2) [right] {$\frac{1}{25}$};
+\node at (3.9,-4.5) [right] {$\frac{16}{25}$};
+
+\end{tikzpicture}
+
+\begin{itemize}
+\item \underline{\textcolor{green}{Pour P(C):Tirage successif avec remise de 2 autres boules}}
+
+C : << Le professeur tire deux boules de même couleur au second tirage sachant que les boules tirées au premier tirage sont de même couleur.>>  \textbf{0,5 pt}
+
+C : << RR ou JJ >>
+
+P(C)=P(RR ou JJ)=$P_{A}({RR-ou-JJ})=P(RR)+P(JJ)=\frac{16}{25}+\frac{1}{25}=\frac{17}{25}$
+
+		\begin{center}
+			\textcolor{green}{\boxed{P(C)=\frac{17}{25}}}
+		\end{center}
+
+\item \underline{\textcolor{green}{Pour P(D):tirage successif sans remise de 2 autres boules}}
+
+D : << Le professeur tire deux boules de même couleur au second tirage sachant que les boules tirées au premier tirage sont de couleurs distinctes.>> \textbf{0,5 pt}
+
+D : << RJ-JR>> 
+
+\begin{tikzpicture}
+  % Case 1
+  \draw (0,0) rectangle (1.5,1.5);
+  \node at (0.5,1.9) {R};
+  \node at (0.8,0.8) {4};
+  \node at (3,0.8) {X};
+  
+  % Case 2
+  \draw (5,0) rectangle (6.5,1.5);
+  \node at (5.7,1.8) {J};
+  \node at (5.7,0.8) {1};
+  \node at (8,0.8) {X};
+  \node at (9,0.8) {2};
+\end{tikzpicture}\\ 
+
+P(D)=P(RJ)=$P_{B}({RJ})=P(RJ)=\frac{4\times 2}{20}=\frac{2}{5}$
+
+		\begin{center}
+			\textcolor{green}{\boxed{P(D)=\frac{2}{5}}}
+		\end{center}
+
+\item \underline{\textcolor{green}{Pour P(E):}}
+
+E : << Le professeur tire 2 boules de couleurs distinctes au second tirage sachant que les boules tirées au premier tirage sont de couleurs distinctes.>> \textbf{0,5 pt}
+
+E : << RR >>
+
+P(E)=P(RR)=$P_{B}({RR})=P(RR)=\frac{12}{20}=\frac{3}{5}$
+
+		\begin{center}
+			\textcolor{green}{\boxed{P(D)=\frac{3}{5}}}
+		\end{center}
+
+\item \underline{\textcolor{green}{Pour P(F):}}
+
+F : << Le professeur tire 2 boules de couleurs distinctes au premier et au second tirage. >> \textbf{0,5 pt}
+
+E : << JR >>
+
+P(F)=P(JR)=$P(A\cap F)=\frac{2}{5}\times \frac{2}{5}$
+
+		\begin{center}
+			\textcolor{green}{\boxed{P(A\cap F)=\frac{4}{25}}}
+		\end{center}
+\end{itemize}
+2. Pour le second tirage, chaque boule rouge tirée fait gagner au FOSCO 1000 F et chaque boule jaune tirée fait gagner au collectif des professeurs 1000 F.
+Soit \(X\) la variable aléatoire à laquelle on associe le gain obtenu par le FOSCO.
+
+a. Déterminer les différentes valeurs prises par \(X\) et sa loi de probabilité. \textbf{1 pt}
+
+b. Déterminer la fonction de répartition de \(X\). \textbf{1 pt}
+
+3. Étant donné que le collectif est composé de 50 professeurs qui ont tous joué indépendamment et dans les mêmes conditions, déterminer la probabilité des événements suivants :
+
+G : << le FOSCO réalise un gain de 100 000 F. >> \textbf{0,5 pt}
+
+H : << le collectif des professeurs réalise un gain de 100 000 F. >> \textbf{0,5 pt}
+
+I : << Ni gagnant, ni perdant. >> \textbf{0,5 pt}
+
+\end{document}
