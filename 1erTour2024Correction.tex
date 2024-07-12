@@ -82,7 +82,7 @@ Calculons le quotient :
 \textcolor{green}{Le module du quotient \(\frac{z_C - z_B}{z_A - z_B}\) est \(1\) et un argument est \(\frac{\pi}{2}\)}.
 \item \textbf{Nature du triangle ABC.}
 
-$\mid\frac{z_C - z_B}{z_A - z_B}\mid=1 \implies \frac{BC}{BA}\mid=1\implies BC=BA$
+$\mid\frac{z_C - z_B}{z_A - z_B}\mid=1 \implies \frac{BC}{BA}=1\implies BC=BA$.
 \begin{align*}
 \arg\left( \frac{z_C - z_B}{z_A - z_B}\right) &=\arg\left( z_C - z_B \right) - \arg\left( z_A - z_B \right)\\
 &=\left( \vec{u}, \overrightarrow{BC} \right)-\left( \vec{u}, \overrightarrow{BA} \right)\\
@@ -101,7 +101,7 @@ $\mid\frac{z_C - z_B}{z_A - z_B}\mid=1 \implies \frac{BC}{BA}\mid=1\implies BC=B
 
 \item Déterminons l'affixe de $Z_{D}$
 
-Comme  BADC est un carré donc $\overrightarrow{BA}=\overrightarrow{CD}$
+Comme  BADC est un carré donc $\overrightarrow{BA}=\overrightarrow{CD}$.
 
 $\overrightarrow{BA}=\overrightarrow{CD}\implies Z_{A}-Z_{B}=Z_{D}-Z_{C}\implies Z_{D}=Z_{A}-Z_{B}+Z_{C}\implies Z_{D}=3-i$
 
@@ -110,6 +110,34 @@ $\overrightarrow{BA}=\overrightarrow{CD}\implies Z_{A}-Z_{B}=Z_{D}-Z_{C}\implies
 \]
 
 \item Montrons que les points A, B, C et D appartiennent à un même cercle dont on précisera le centre et le rayon.
+
+Comme BADC est un carré donc les points A, B, C et D sont sur un même cerlce donc [BD] est un diamètre ce cercle. 
+
+Un rayon de ce cercle : $r=IB=\frac{BD}{2}$ où I est le centre de ce cerlce
+
+\begin{align*}
+\text{\textcolor{green}{Le diamètre}} : BD&=|z_{D}-z_{B}|\\
+	&=|3-i-(-2)|\\
+	&=|5-i|\\
+	&=\sqrt{26}\\
+\textcolor{green}{\boxed{BD=\sqrt{26}}}
+\end{align*}
+
+\begin{align*}
+\text{\textcolor{green}{Le rayon }} : r&=IB=\frac{BD}{2}\\
+&=\frac{\sqrt{26}}{2}\textbf{ 0,25 pt}\\
+\textcolor{green}{\boxed{r=\frac{\sqrt{26}}{2}}}
+\end{align*}
+
+\begin{align*}
+\text{\textcolor{green}{Le centre }} : Z_{I}&=\frac{Z_{D}+Z_{B}}{2}\\
+&=\frac{3-i+(-2)}{2}\\
+&=\frac{1-i}{2}\\
+&=\frac{1}{2}-\frac{1}{2}i \\
+\textcolor{green}{\boxed{Z_{I}=\frac{1}{2}-\frac{1}{2}i}}\textbf{ 0,25 pt}
+\end{align*}
+
+Finalement, A, B, C et D sont sur un même cercle $\mathcal{C}\left(I\begin{pmatrix} \frac{1}{2} \\ -\frac{1}{2}\end{pmatrix}\;;\ \frac{\sqrt{26}}{2}\right)$
 \begin{itemize}
 \item \[
 \text{A, B, C et D appartiennent à un même cercle si :}\left({\overrightarrow {CA}},{\overrightarrow {CB}}\right)=\left({\overrightarrow {DA}},{\overrightarrow {DB}}\right)\mod \pi 
@@ -169,22 +197,8 @@ $\overrightarrow{BA}=\overrightarrow{CD}\implies Z_{A}-Z_{B}=Z_{D}-Z_{C}\implies
 \textcolor{green}{\textbf{Donc A, B, C et D sont sur le même cerlce}}
 \]
 
-Comme BADC est un carré et que A, B, C et D sont sur un même cerlce donc [BD] est un diamètre ce cercle. 
-
-Un rayon est de ce cercle $r=IB=\frac{BD}{2}$ où I est le centre de ce cerlce
-
-
-\begin{align*}
-BD&=|z_{D}-z_{B}|\\
-	&=|3-i-(-2)|\\
-	&=|5-i|\\
-	&=\sqrt{26}
-\end{align*}
-\[\text{donc }r=IB=\frac{BD}{2}=\frac{\sqrt{26}}{2}\textbf{ 0,25 pt}\]
 \end{itemize}
-\[Z_{I}=\frac{Z_{D}+Z_{B}}{2}=\frac{3-i+(-2)}{2}=\frac{1-i}{2}=\frac{1}{2}-\frac{1}{2}i \textbf{ 0,25 pt}\]
-\[Z_{I}=\frac{1}{2}-\frac{1}{2}i\]
-Finalement, A, B, C et D sont sur un même cercle $\mathcal{C}\left(I\begin{pmatrix} \frac{1}{2} \\ -\frac{1}{2}\end{pmatrix}\;;\ \frac{\sqrt{26}}{2}\right)$
+
 \end{enumerate}
 \item 
 \begin{enumerate}
