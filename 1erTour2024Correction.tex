@@ -448,7 +448,7 @@ P(\overline{E}) = P(\overline{E}|D) \times P(D) + P(\overline{E}|\overline{D}) \
     Donc, la probabilité qu'un article vendu soit défectueux est environ \(0.00977\), ce qui représente environ \(0.977\%\).
 
     Étant donné que \(0.977\%\) est inférieur à \(1\%\), cela signifie que ce contrôle permet à l'entreprise de réaliser son souhait de vendre moins de 1\% d'articles défectueux.
-\section*{\textcolor{red}{\underline{CORRECTION DU PROBLEME :} ( 10 points ).}}
+\section*{\textcolor{green}{\underline{CORRECTION DU PROBLEME :} ( 10 points ).}}
 \subsection*{ \underline{PARTIE A } ( 2 points ) }
 \begin{enumerate}
 \item Pour tout $x < 0$, on pose : $u(x)=x+1-e^{-x}$.
@@ -460,8 +460,18 @@ Supposons que $1-e^{-x} < 0$
 $ 1-e^{-x} < 0 \implies 1 < e^{-x} \implies 0 < -x \implies 0 > x \implies x\in \left]  -\infty; 0\right[  $
 
 donc si $x\in \left]  -\infty; 0\right[$ alors $1-e^{-x} < 0$
-%En déduire que pour tout $x < 0, u(x) < 0 $.
 
+Déduisons-en que pour tout $x < 0, u(x) < 0 $.
+
+D'après la question précédente, $1-e^{-x} < 0$ comme $x < 0$ donc par somme
+\[
+\underline{\begin{cases}
+1-e^{-x} < 0\\
+x < 0
+\end{cases}}
+\]
+\[x+1-e^{-x} < 0\]
+D'où $ u(x) < 0 $
 %\item Pour tout $x > 0,$ on pose : $v(x)=x-1-\ln x$.
 %\begin{enumerate}
 %\item[a.] Dresser le tableau de variations de $v$.
