@@ -472,10 +472,82 @@ x < 0
 \]
 \[x+1-e^{-x} < 0\]
 D'où $ u(x) < 0 $
-%\item Pour tout $x > 0,$ on pose : $v(x)=x-1-\ln x$.
-%\begin{enumerate}
-%\item[a.] Dresser le tableau de variations de $v$.
+\item Pour tout $x > 0,$ on pose : $v(x)=x-1-\ln x$.
+\begin{enumerate}
+\item[a.] Dressons le tableau de variations de $v$.
+
+
+\textcolor{green}{\underline{*continuité}}
+
+$v(x)$ est la somme de deux fonctions continue donc continue $\mathbb{R}^{*}_{+}$ donc continue sur $\mathbb{R}^{*}_{+}$
+
+\textcolor{green}{\underline{*dérivabilité}}
+
+$x\mapsto x-1$ est dérivable sur $\mathbb{R}$ en particulier sur $\mathbb{R}^{*}_{+}$
+
+$x\mapsto \ln x$ est dérivable sur $\mathbb{R}^{*}_{+}$
+
+Donc $x\mapsto x-1-\ln x$ est dérivable sur $\mathbb{R}^{*}_{+}$
+
+D'où $v(x)$ est dérivable sur $\mathbb{R}^{*}_{+}$
+
+\textcolor{green}{\underline{*dérivée}}
+
+$v'(x)=1-\frac{1}{x} \implies v'(x)=\frac{x-1}{x}$
+
+\textcolor{green}{\underline{le signe de $v'(x)$}}
+
+Le signe de  $v'$ dépend du numérateur car pour le dénominateur, $\forall x\in \mathbb{R}^{*}_{+}$, x>0
+ 
+--$ \forall x\in \left]0;1\right[, x-1<0$ donc $ v'(x)<0 $ donc $v(x)$ est décroissante sur $\left]0;1\right[$
+
+--$ \forall x\in \left]1;+\infty\right[, x-1<0$ donc $ v'(x)>0 $ donc $v(x)$ est croissante sur $\left]0;+\infty\right[$
+
+\textcolor{green}{\underline{les limites aux bornes de $Dv$}}
+
+En $0$:
+
+\[
+\lim_{x\to 0^{+}}v(x)=\lim_{x\to 0^{+}}x-1-\ln x:
+\begin{cases}
+\lim_{x\to 0^{+}}x-1 = -1 \\
+\lim_{x\to 0^{+}}-\ln x =+\infty
+\end{cases}
+\text{Par somme:}\lim_{x\to 0^{+}}v(x)=+\infty
+\]
+\[\textcolor{green}{\boxed{\lim_{x\to 0^{+}}v(x)=+\infty}}\]
+En $+\infty$:
+
+\[
+\lim_{x\to +\infty}v(x)=\lim_{x\to +\infty}x-1-\ln x:
+\begin{cases}
+\lim_{x\to +\infty}x-1 = +\infty \\
+\lim_{x\to +\infty}-\ln x =-\infty
+\end{cases}
+\text{Par somme forme indéterminée}
+\]
+Levons l'indétermination:
+
+\[
+\lim_{x\to +\infty}x-1-\ln x = \lim_{x\to +\infty}x(1-\frac{1}{x}-\frac{\ln x}{x}):
+\begin{cases}
+\lim_{x\to +\infty}x = +\infty \\
+\lim_{x\to +\infty} 1-\frac{1}{x}-\frac{\ln x}{x} =1
+\end{cases}
+\text{Par produit, }
+\]
+\[\textcolor{green}{\boxed{\lim_{x\to +\infty}v(x)=+\infty}}\]
+
+\[\text{Le calcul de v(1):}\textcolor{green}{\boxed{v(1)=0}}\]
+\begin{tikzpicture}
+ \tkzTabInit{$x$/1,$v'(x)$/1,$v$/2}{$0$,$1$ $+\infty$}
+ %\tkzTabLine{,+,z,-,z,+,}
+ \tkzTabLine{,-,z,+,}
+ %\tkzTabVar{-/$0$,+/$1$,-/$-1$,+/$0$}
+ \tkzTabVar{+/$0$,-/$0$,+/$2$}
+ %\tkzTabVal{2}{3}{0.5}{$\pi$}{0}
+\end{tikzpicture}
 %\item[b.] En déduire le signe de $v(x)$ pour $x > 0 $.
-%\end{enumerate}
+\end{enumerate}
 \end{enumerate}
 \end{document}
