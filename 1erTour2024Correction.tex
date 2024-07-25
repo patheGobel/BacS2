@@ -540,12 +540,10 @@ Levons l'indétermination:
 
 \[\text{Le calcul de v(1):}\textcolor{green}{\boxed{v(1)=0}}\]
 \begin{tikzpicture}
- \tkzTabInit{$x$/1,$v'(x)$/1,$v$/2}{$0$,$1$ $+\infty$}
- %\tkzTabLine{,+,z,-,z,+,}
+ \tkzTabInit{$x$/1,$v'$/1,$v$/2}{$0$,$1$,$+\infty$}
  \tkzTabLine{,-,z,+,}
- %\tkzTabVar{-/$0$,+/$1$,-/$-1$,+/$0$}
- \tkzTabVar{+/$0$,-/$0$,+/$2$}
- %\tkzTabVal{2}{3}{0.5}{$\pi$}{0}
+ \tkzTabVar{+/$+\infty$,-/$0$,+/$+\infty$}
+% \tkzTabVal{2}{3}{0.5}{$\pi$}{0}
 \end{tikzpicture}
 %\item[b.] En déduire le signe de $v(x)$ pour $x > 0 $.
 \end{enumerate}
