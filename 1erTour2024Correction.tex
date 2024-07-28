@@ -626,7 +626,21 @@ Pour ce faire, étudions le signe de $f(x)-y$
 En effet, $f(x)-y=xe^{x}-x-1-(-x-1)=xe^{x}$ comme $x < 0 $ donc $xe^{x} < 0$ ainsi, $f(x)-y<0$
 
 D'où  $(C_{f})$ est en dessous de $(D)$ sur $]-\infty, 0[$
-%\item[d.]Etudier la nature de la branche infinie de $(C_{f})$ en $+\infty$.\textbf{ 0,5 points}
+\item[d.]Etudions la nature de la branche infinie de $(C_{f})$ en $+\infty$.\textbf{ 0,5 points}
+
+\[\text{Pour ce faire, calculons } \lim_{x \to +\infty}\frac{f(x)}{x} \]
+
+\begin{align*}
+\lim_{x \to +\infty}\frac{f(x)}{x}&=\lim_{x \to +\infty}\frac{x^{2}-1-2x\ln x}{x}=\lim_{x \to +\infty}\frac{x^{2}(1-\frac{1}{x^{2}}-2\frac{\ln x}{x})}{x}\\
+&=\lim_{x \to +\infty}x^{2}\left( 1-\frac{1}{x^{2}}-2\frac{\ln x}{x}\right) :
+\begin{cases}
+\lim_{x \to +\infty} x^{2}=+\infty\\
+\lim_{x \to +\infty}\left( 1-\frac{1}{x^{2}}-2\frac{\ln x}{x}\right)=1
+\end{cases}
+\text{Par produit, }\\
+\end{align*}
+\[\textcolor{green}{\boxed{\textcolor{green}{\boxed{\lim_{x\to +\infty}\frac{f(x)}{x}=+\infty}}}}\]
+Donc (Cf) admet une branche parabolique de direction $(ox)$
 \end{enumerate}
 \end{enumerate}
 \end{document}
