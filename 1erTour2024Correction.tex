@@ -645,7 +645,6 @@ Donc (Cf) admet une branche parabolique de direction $(ox)$
 \item
 \begin{enumerate}
 \item[a.]Etudions la contuinité de $f$ en  $0$. \textbf{ 0,5 point}
-%\item[b.]Etudier la dérivabilité de $f$ en $0$. \textbf{ 0,5 point}
 \[\text{ f est continue en 0 ssi }\lim_{x \to 0^{-}} f(x)=\lim_{x \to 0^{+}} f(x)=f(0)\]
 En $0^{-}$
 \[
@@ -667,6 +666,29 @@ En $0^{+}$
 \]
 \[f(0)=0e^{0}-0-1=-1 \text{ donc,} f(0)=-1\]
 \[\textcolor{green}{\text{ comme }\lim_{x \to 0^{-}} f(x)=\lim_{x \to 0^{+}} f(x)=f(0)\text{ donc f est continue en 0 }}\]
+\item[b.]Etudions la dérivabilité de $f$ en $0$. \textbf{ 0,5 point}
+\[
+\text{ f est derivable en 0 ssi }\lim_{x \to 0^{-}} \frac{f(x)-f(0)}{x}=\lim_{x \to 0^{+}} \frac{f(x)-f(0)}{x}
+\]
+En $0^{-}$
+\[
+\lim_{x \to 0^{-}} \frac{f(x)-f(0)}{x}=\lim_{x \to 0^{-}} \frac{xe^{x}-x-1-(-1)}{x}=\lim_{x \to 0^{-}} \frac{xe^{x}-x}{x}=\lim_{x \to 0^{-}} e^{x}-1=0
+\]
+\[\textcolor{green}{\boxed{\textcolor{green}{\boxed{\lim_{x \to 0^{-}} \frac{f(x)-f(0)}{x}=0}}}}\]
+En $0^{+}$
+\begin{align*}
+\lim_{x \to 0^{+}} \frac{f(x)-f(0)}{x}&=\lim_{x \to 0^{+}} \frac{x^{2}-1-2x\ln x-(-1)}{x}\\
+&=\lim_{x \to 0^{+}} \frac{x^{2}-2x\ln x}{x}=\lim_{x \to 0^{+}} x-2\ln x:
+\begin{cases}
+\lim_{x \to 0^{+}} x=0\\
+\lim_{x \to 0^{+}} -2\ln x=+\infty
+\end{cases}
+\text{ par somme,}
+\end{align*}
+\[\lim_{x \to 0^{+}} \frac{f(x)-f(0)}{x}=+\infty\]
+\[\textcolor{green}{\boxed{\textcolor{green}{\boxed{\lim_{x \to 0^{+}} \frac{f(x)-f(0)}{x}=+\infty}}}}\]
+
+\[\text{ finalement, }\lim_{x \to 0^{-}} \frac{f(x)-f(0)}{x}\neq\lim_{x \to 0^{+}} \frac{f(x)-f(0)}{x} \text{ donc f n'est pas dérivable en 0.}\] 
 %	Interpreter  graphiquement les résultats obtenus. \textbf{ 0,5 point}
 \end{enumerate}
 \end{enumerate}
