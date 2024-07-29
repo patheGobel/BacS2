@@ -642,5 +642,32 @@ D'où  $(C_{f})$ est en dessous de $(D)$ sur $]-\infty, 0[$
 \[\textcolor{green}{\boxed{\textcolor{green}{\boxed{\lim_{x\to +\infty}\frac{f(x)}{x}=+\infty}}}}\]
 Donc (Cf) admet une branche parabolique de direction $(ox)$
 \end{enumerate}
+\item
+\begin{enumerate}
+\item[a.]Etudions la contuinité de $f$ en  $0$. \textbf{ 0,5 point}
+%\item[b.]Etudier la dérivabilité de $f$ en $0$. \textbf{ 0,5 point}
+\[\text{ f est continue en 0 ssi }\lim_{x \to 0^{-}} f(x)=\lim_{x \to 0^{+}} f(x)=f(0)\]
+En $0^{-}$
+\[
+\lim_{x \to 0^{-}}f(x)=\lim_{x \to 0^{-}}xe^{x}-x-1:
+\begin{cases}
+\lim_{x \to 0^{-}}xe^{x}=0\\
+\lim_{x \to 0^{-}}-x-1=-1
+\end{cases}
+\text{ Par somme,}\textcolor{green}{\lim_{x \to 0^{-}}f(x)=-1}
+\]
+En $0^{+}$
+\[
+\lim_{x \to 0^{+}}f(x)=\lim_{x \to 0^{+}}x^{2}-1-2x\ln x:
+\begin{cases}
+\lim_{x \to 0^{+}}x^{2}-1=-1\\
+\lim_{x \to 0^{+}}-2x\ln x=0
+\end{cases}
+\text{ Par somme,}\textcolor{green}{\lim_{x \to 0^{+}}f(x)=-1}
+\]
+\[f(0)=0e^{0}-0-1=-1 \text{ donc,} f(0)=-1\]
+\[\textcolor{green}{\text{ comme }\lim_{x \to 0^{-}} f(x)=\lim_{x \to 0^{+}} f(x)=f(0)\text{ donc f est continue en 0 }}\]
+%	Interpreter  graphiquement les résultats obtenus. \textbf{ 0,5 point}
+\end{enumerate}
 \end{enumerate}
 \end{document}
