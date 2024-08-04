@@ -764,13 +764,30 @@ $\forall x > 0$, $v(x)\geq 0$ donc $f'(x)\geq 0$}
 Comme $g$ est bijectif de $]0, +\infty[$ vers $g(]0, +\infty[)=]0, +\infty[$ donc il amet une bijection réproque $g^{-1}$ de $g(]0, +\infty[)$ vers  $]0, +\infty[$\\
 $Dg=]0, +\infty[$}
 \item[b.] Tracons la courbe representative $C_{g^{-1}}$ de $g^{-1}$ dans le plan muni du repère \\
-%			(O,$\vec{i}$,$\vec{j}$). \textbf{ 0,25 point}
+			(O,$\vec{i}$,$\vec{j}$). \textbf{ 0,25 point}
+			
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{c1c2c3.png}
 \caption{Courbe de (Cf)}
 \label{fig:monimage}
 \end{figure}
+\end{enumerate}
+\newpage
+\item Soit $\lambda$ un réel strictement négatif.
+\begin{enumerate}
+\item[a.] Exprimons l'aire $A(\lambda)$ en fonction de $\lambda$ la partie du plan délimitée par les droites d'équations $x=\lambda$, $x=0$, $y=-x-1$ et la courbe $(C_{f})$. \textbf{ 0,25 point}
+\begin{align*}
+\int_{\lambda}^{0}\left( f(x)-y \right)dx &=\int_{\lambda}^{0}\left( xe^{x}-x-1-(-x-1) \right)dx\\
+&=\int_{\lambda}^{0}\left( xe^{x}\right)dx\\
+&=\left[\left( x-1\right) e^{x}\right]_{\lambda}^{0} \\
+&=\left[\left( 0-1\right) e^{0}-\left( \lambda-1\right) e^{\lambda}\right] \\
+&=\left[-1-\lambda e^{\lambda}+e^{\lambda}\right] 
+\end{align*}
+
+\[\textcolor{green}{\boxed{\boxed{\int_{\lambda}^{0}\left( f(x)-y \right)dx=\left( 1-\lambda\right) e^{\lambda}-1}}}\]
+
+%\item[b.] En déduire $\lim_{\lambda \to -\infty}A(\lambda)$. \textbf{ 0,25 point}
 \end{enumerate}
 \end{enumerate}
 \end{document}
