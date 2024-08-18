@@ -348,6 +348,33 @@ $g$ existe ssi $ x+1 >0 $ et $x+1\neq 0$ $\implies$ $ x>-1 $ et $x\neq -1$ $\imp
 		\begin{center}
 			\textcolor{green}{\boxed{Df=]-1,+\infty[}}
 		\end{center}
+\textcolor{green}{\underline{Les limites de g aux bornes de $Dg$:}}
+
+Les bornes de $Dg$ sont $-1$ et $+\infty$
+
+\textcolor{green}{\underline{En -1}:}
+
+\[
+\lim_{x \to -1^{+}}g(x)=\lim_{x \to -1^{+}}-2\ln(x+1)+\frac{x}{x+1}:
+\begin{cases}
+\lim_{x \to -1^{+}}-2\ln(x+1)=+\infty\\
+\lim_{x \to -1^{+}}\frac{x}{x+1}=-\infty
+\end{cases}
+\text{Par somme F.I}
+\]
+Levons l'indétermination
+\begin{align*}
+\lim_{x \to -1^{+}}g(x)&=\lim_{x \to -1^{+}}-2\ln(x+1)+\frac{x}{x+1}\\
+&=\lim_{x \to -1^{+}}\frac{-2(x+1)\ln(x+1)+x}{x+1}:
+\begin{cases}
+\lim_{x \to -1^{+}}-2(x+1)\ln(x+1)+x=-1\\
+\lim_{x \to -1^{+}}x+1=0^{-}
+\end{cases}
+\end{align*}
+\[\text{Par quotient }\lim_{x \to -1^{+}}g(x)=+\infty\]
+		\begin{center}
+			\textcolor{green}{\boxed{\lim_{x \to -1^{+}}g(x)=+\infty}}
+		\end{center}		
 
 %\item[b.] Calculer $g'(x)$ , étudier son signe et dresser le tableau de variations de g. \textbf{1 pt}
 \end{enumerate}
