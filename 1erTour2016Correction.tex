@@ -401,7 +401,24 @@ g'(x)&=-2\frac{1}{x+1}+\frac{x+1-x}{(x+1)^{2}}\\
 		\begin{center}
 			\textcolor{green}{\boxed{g'(x)=\frac{-2x-1}{(x+1)^{2}}}}
 		\end{center}
-%Etudions son signe et dresser le tableau de variations de g. \textbf{1 pt}
+Etudions le de $g'(x)$
+
+Le signe de $g'(x)$ dépend de numérateur.
+
+Or $\forall x \in]-1,-\frac{1}{2}[$, $g'(x)>0$ donc $g$ est croissante
+
+$\forall x \in ]-\frac{1}{2},+\infty[$, $g'(x)<0$ donc $g$ est décroissante
+
+Dressons le tableau de variations de g. \textbf{1 pt}
+
+\begin{tikzpicture}
+ \tkzTabInit{$x$/1,$f'$/1,$f$/2}{$-1$,$-\frac{1}{2}$,$+\infty$}
+ \tkzTabLine{,+,z,-,}
+ \tkzTabVar{-/$-\infty$,+/$0$,-/$-\infty$}
+ %\tkzTabVal{2}{3}{0.5}{$\pi$}{0}
+ % Add a movable label
+ %\node at (3.5, -1.5) {$7$};
+\end{tikzpicture}
 \end{enumerate}
 %\item 
 %\begin{enumerate}
