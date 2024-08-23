@@ -414,17 +414,45 @@ Dressons le tableau de variations de g. \textbf{1 pt}
 \begin{tikzpicture}
  \tkzTabInit{$x$/1,$f'$/1,$f$/2}{$-1$,$-\frac{1}{2}$,$+\infty$}
  \tkzTabLine{,+,z,-,}
- \tkzTabVar{-/$-\infty$,+/$0$,-/$-\infty$}
+ \tkzTabVar{-/$-\infty$,+/$0.39$,-/$-\infty$}
  %\tkzTabVal{2}{3}{0.5}{$\pi$}{0}
  % Add a movable label
  %\node at (3.5, -1.5) {$7$};
 \end{tikzpicture}
 \end{enumerate}
-%\item 
-%\begin{enumerate}
-%\item[a.] Calculer $g(0)$. Montrer que l’équation $g(x) = 0$ admet exactement deux solutions dont l’une que l’on désigne $\alpha \in ]-0,72, -0,71[.$ \textbf{0,25 +0,5 pt}
+\item 
+\begin{enumerate}
+\item[a.] Calculons $g(0)$.
+
+$g(0)=-2\ln(0+1)+\frac{0}{0+1}=0$
+
+\textcolor{green}{g(0)=0}
+
+Montrons que l’équation $g(x) = 0$ admet exactement deux solutions dont l’une que l’on désigne $\alpha \in ]-0,72, -0,71[.$ \textbf{0,25 +0,5 pt}
+
+\textcolor{green}{\underline{Existant de la première des solutions:}}
+
+Les solutions existes ssi $g(-0,72)\times g(-0,71)<0$
+
+$g(-0,72)=-0,025$ et $g(-0,71)=0,027$ donc $g(-0,72)\times g(-0,71)<0$
+
+Donc il existe une solution $\alpha \in ]-0,72, -0,71[$
+
+\textcolor{green}{\underline{inicité:}}
+
+Comme $g$ est continue et strictement coissant sur $]-0,72, -0,71[$ donc la solution est unique.
+
+\textcolor{green}{\underline{Existant de la deuxiéme des solutions:}}
+
+La solution existe car $g(]-\frac{1}{2};+\infty[)=]0,39:-\infty[$
+
+\textcolor{green}{\underline{inicité:}}
+
+Comme $g$ est continue et strictement coissant sur $]-\frac{1}{2};+\infty[$ donc la solution est unique.
+
+En conclusion, $g(x)$ admet deux solutions sur $Dg$
 %\item[b.] Déterminer le signe de $g(x)$. \textbf{0,5 pt}
-%\end{enumerate}
+\end{enumerate}
 \end{enumerate}
 
 %\subsection*{\centering Partie B}
