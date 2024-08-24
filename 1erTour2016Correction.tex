@@ -461,21 +461,41 @@ D'après le tableau de variation,
 \end{enumerate}
 \end{enumerate}
 
-%\subsection*{\centering Partie B}
-%$$
-% \text{ Soit f la fonction définie par } 
-%\begin{cases}
-%f(x)=\frac{x^{2}}{\ln(x+1)}\quad\quad\quad\quad \text{ si } x>-1\\
-%f(x)=(1+x)e^{-x-1} \quad\text{ si } x\leq -1\\
-%f(0)=0
-%\end{cases}
-%$$
-%\begin{enumerate}
-%\item
-%\begin{enumerate}
-%\item[a.] Montrer que $D_{f}=\mathbb{R}$ et calculer les limites aux bornes de $D_{f}$. $\textbf{0,75 pt}$
+\subsection*{\centering Partie B}
+$$
+ \text{ Soit f la fonction définie par } 
+\begin{cases}
+f(x)=\frac{x^{2}}{\ln(x+1)}\quad\quad\quad\quad \text{ si } x>-1\\
+f(x)=(1+x)e^{-x-1} \quad\text{ si } x\leq -1\\
+f(0)=0
+\end{cases}
+$$
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item[a.] Montrons que $D_{f}=\mathbb{R}$
+$$
+ \text{ Posons } 
+\begin{cases}
+f(x)=f_{1}(x)=\frac{x^{2}}{\ln(x+1)}\quad\quad\quad\quad \text{ si } x>-1\\
+f(x)=f_{2}(x)=(1+x)e^{-x-1} \quad\text{ si } x\leq -1\\
+f(0)=0
+\end{cases}
+$$
+-$f_{1}$ existe ssi $x+1>0$ et $x>-1$ donc
+
+($x+1>0$ et $x>-1$) $ \implies x>-1\implies x \in \left]-1;+\infty \right[$
+
+Donc \textcolor{green}{$Df_{1}=\left]-1;+\infty \right[$}
+
+-\textcolor{green}{$Df_{1}=\left]-\infty; -1\right]$}
+
+Donc $Df=\left( \left]-1;+\infty \right[ \right)  \cap \left( \left]-\infty; -1\right] \right) =\mathbb{R} $
+
+\textcolor{green}{\boxed{Df=\mathbb{R}}}
+%Calculons les limites aux bornes de $D_{f}$. $\textbf{0,75 pt}$
 %\item[b.] Etudier la nature des branches infinies. $\textbf{0,75 pt}$
-%\end{enumerate}
+\end{enumerate}
 %\item
 %\begin{enumerate}
 %\item[a.] Etudier la continuité de $f$ en $-1$ et en $0$. $\textbf{0,5 pt}$
@@ -492,7 +512,7 @@ D'après le tableau de variation,
 %\item[b.] Donner le sens de variation de $h^{-1}$. $\textbf{0,25 pt}$
 %\item[c.] Construire $Cf$ et $Ch^{-1}$. $\textbf{1,25 pt}$
 %\end{enumerate}
-%\end{enumerate}
+\end{enumerate}
 %\subsection*{\centering Partie C}
 %Soit m la fonction définie par $m(x)=\frac{\ln(x+1)}{x^{2}}-\frac{1}{x(x+1)}$
 %\begin{enumerate}
