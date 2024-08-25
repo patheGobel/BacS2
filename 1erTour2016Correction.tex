@@ -500,16 +500,16 @@ Les bornes de Df sont $-\infty$ et $+\infty$
 \begin{itemize}
 \item \underline{\textcolor{green}{En $-\infty$}}
 $$
-\lim_{x \to -\infty}g(x)=\lim_{x \to -\infty}(1+x)e^{-x-1}=-\infty
+\lim_{x \to -\infty}f(x)=\lim_{x \to -\infty}(1+x)e^{-x-1}=-\infty
 $$
 \begin{center}
-\textcolor{green}{\boxed{\lim_{x \to -\infty}g(x)=-\infty}}
+\textcolor{green}{\boxed{\lim_{x \to -\infty}f(x)=-\infty}}
 \end{center}
 
 \item \underline{\textcolor{green}{En $+\infty$}}
 
 \begin{align*}
-\lim_{x \to +\infty}g(x)&=\lim_{x \to +\infty}\frac{x^{2}}{\ln(x+1)}\times \frac{1}{\frac{x+1}{x+1}}\\
+\lim_{x \to +\infty}f(x)&=\lim_{x \to +\infty}\frac{x^{2}}{\ln(x+1)}\times \frac{1}{\frac{x+1}{x+1}}\\
 &=\lim_{x \to +\infty}\frac{x^{2}}{\frac{\ln(x+1)(x+1)}{x+1}}\\
 &=\lim_{x \to +\infty}\frac{1}{\frac{\ln(x+1)}{x+1}}\times\frac{x^{2}}{x+1}:
 \begin{cases}
@@ -519,12 +519,30 @@ $$
 \end{align*}
 
 \begin{center}
-\textcolor{green}{\boxed{\lim_{x \to +\infty}g(x)=+\infty}}
+\textcolor{green}{\boxed{\lim_{x \to +\infty}f(x)=+\infty}}
 \end{center}
 
 \end{itemize}
 
-%\item[b.] Etudier la nature des branches infinies. $\textbf{0,75 pt}$
+\item[b.] Etudions la nature des branches infinies. $\textbf{0,75 pt}$
+\begin{itemize}
+\item \underline{\textcolor{green}{En $-\infty$}}
+\[\text{Comme} \lim_{x \to -\infty}f(x)=-\infty, \text{calculons } \lim_{x \to -\infty}\frac{f(x)}{x}\]
+\begin{align*}
+\lim_{x \to -\infty}\frac{f(x)}{x}=\lim_{x \to -\infty}\frac{(1+x)e^{-x-1}}{x}:
+\begin{cases}
+\lim_{x \to -\infty}\frac{x+1}{x}=1\\
+\lim_{x \to -\infty}e^{-x-1}=+\infty
+\end{cases}
+\text{Par produit, } \lim_{x \to -\infty}\frac{f(x)}{x}=+\infty
+\end{align*}
+\begin{center}
+\textcolor{green}{ \boxed{\lim_{x \to -\infty}\frac{f(x)}{x}=+\infty} \text{ Donc Cf admet une branche parabolique de direction (oy) au voisinage de }$-\infty$ }
+\end{center}
+%\begin{center}
+%\textcolor{green}{\boxed{\lim_{x \to +\infty}g(x)=+\infty}}
+%\end{center}
+\end{itemize}
 \end{enumerate}
 %\item
 %\begin{enumerate}
