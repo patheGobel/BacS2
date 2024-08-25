@@ -539,9 +539,9 @@ $$
 \begin{center}
 \textcolor{green}{ \boxed{\lim_{x \to -\infty}\frac{f(x)}{x}=+\infty} \text{ Donc Cf admet une branche parabolique de direction (oy) au voisinage de }$-\infty$ }
 \end{center}
-++++++++++++++++++++++++++++++++++++
-\begin{itemize}
+
 \item \underline{\textcolor{green}{En $+\infty$}}
+
 \[\text{Comme} \lim_{x \to +\infty}f(x)=-\infty, \text{calculons } \lim_{x \to +\infty}\frac{f(x)}{x}\]
 \begin{align*}
 \lim_{x \to +\infty}\frac{f(x)}{x}&=\lim_{x \to +\infty}\frac{\frac{x^{2}}{\ln(x+1)}}{x}\\
@@ -558,16 +558,40 @@ $$
 \textcolor{green}{ \boxed{\lim_{x \to +\infty}\frac{f(x)}{x}=+\infty} \text{ Donc (Cf) admet une branche parabolique de direction (oy) au voisinage de }$+\infty$ }
 \end{center}
 \end{itemize}
-%\begin{center}
-%\textcolor{green}{\boxed{\lim_{x \to +\infty}g(x)=+\infty}}
-%\end{center}
-\end{itemize}
 \end{enumerate}
-%\item
-%\begin{enumerate}
-%\item[a.] Etudier la continuité de $f$ en $-1$ et en $0$. $\textbf{0,5 pt}$
+\item
+\begin{enumerate}
+\item[a.] Etudions la continuité de $f$ en $-1$ et en $0$. $\textbf{0,5 pt}$
+\begin{itemize}
+
+\item \underline{\textcolor{green}{Continuité de f en -1}}
+
+\[f \text{est continue en -1 ssi } \lim_{x \to -1^{-}}f(x)=\lim_{x \to -1^{+}}f(x)=f(1)\]
+\begin{itemize}
+\item \underline{\textcolor{green}{En $-1^{-}$}}
+\[
+\lim_{x \to -1^{-}}f(x)=\lim_{x \to -1^{-}}(1+x)e^{-x-1}:
+\begin{cases}
+\lim_{x \to -1^{-}}(1+x)=0\\
+\lim_{x \to -1^{-}}e^{-x-1}=1
+\end{cases}
+\]
+\text{Par produit, } \[\lim_{x \to -1^{-}}f(x)=0\]
+\item \underline{\textcolor{green}{En $-1^{+}$}}
+\[
+\lim_{x \to -1^{+}}f(x)=\lim_{x \to -1^{+}}\frac{x^{2}}{\ln(x+1)}:
+\begin{cases}
+\lim_{x \to -1^{+}}x^{2}=1\\
+\lim_{x \to -1^{+}}\ln(x+1)=\ln(0^{+})=+\infty
+\end{cases}
+\]
+\[\text{Par quotient, } \lim_{x \to -1^{+}}f(x)=0\]
+\end{itemize}
+\[ \text{Comme } \lim_{x \to -1^{-}}f(x)=\lim_{x \to -1^{+}}f(x)=f(1) \text{ donc f est continue en -1 }\]
+%\item \underline{\textcolor{green}{Continuité  de f en 0}}
+\end{itemize}
 %\item[b.] Etudier la dérivabilité de $f$ en $-1$ et en $0$ et interpréter graphiquement les résultats.$\textbf{1 pt}$
-%\end{enumerate}
+\end{enumerate}
 %\item
 %\begin{enumerate}
 %\item[a.] Montrer que pour tout $x \in ]-1, +\infty[$ et $x\neq 0$ on a $f'(x)=\frac{-xg(x)}{\ln^{2}(x+1)}$ et calculer $f'(x)$ sur $]-\infty, -1[$. $\textbf{0,5 pt}$
