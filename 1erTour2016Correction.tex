@@ -631,13 +631,26 @@ $$
 
 \end{itemize}
 
-%\item \underline{\textcolor{green}{Dérivabilité de f en 0}}
+\item \underline{\textcolor{green}{Dérivabilité de f en 0}}
+\begin{align*}
+\lim_{x \to 0}\frac{f(x)-f(0)}{x}&=\lim_{x \to 0}\frac{\frac{x^{2}}{\ln(x+1)}}{x}\\
+&=\lim_{x \to 0}\frac{x}{\ln(x+1)}\\
+&=\lim_{x \to 0}\frac{1}{\frac{\ln(x+1)}{x}}:
+\begin{cases}
+\lim_{x \to 0}\frac{\ln(x+1)}{x}=\lim_{X \to 1}\frac{\ln(X)}{X-1}=1
+\end{cases}
+\end{align*}
+
+\[\text{Par quotient:} \textcolor{green}{ \boxed{ \lim_{x \to 0}\frac{f(x)-f(0)}{x}=1} \text{ donc f est dérivable à 0} } \]
+
 %\[f \text{est continue en 0 ssi } \lim_{x \to 0}\frac{f(x)-f(-1)}{x+1}=a\in\mathbb{R}\]
 %\begin{itemize}
 %\item
 %\end{itemize}
 
+%\item \underline{\textcolor{green}{Interprétions graphiquement des résultats.}}
 \end{itemize}
+
 \end{enumerate}
 %\item
 %\begin{enumerate}
