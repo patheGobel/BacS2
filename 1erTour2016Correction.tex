@@ -589,8 +589,20 @@ $$
 \]
 \[\text{Par quotient, } \textcolor{green}{ \boxed{ \lim_{x \to -1^{+}}f(x)=0} } \]
 \end{itemize}
-\[ \text{Comme } \lim_{x \to -1^{-}}f(x)=\lim_{x \to -1^{+}}f(x)=f(1) \text{ donc f est continue en -1 }\]
+\[\textcolor{green}{ \text{Comme } \lim_{x \to -1^{-}}f(x)=\lim_{x \to -1^{+}}f(x)=f(1) \text{ donc f est continue en -1 } }\]
 \item \underline{\textcolor{green}{Continuité  de f en 0}}
+
+\[f \text{est continue en 0 ssi } \lim_{x \to 0}f(x)=f(0)\]
+
+\begin{align*}
+\lim_{x \to 0}f(x)&=\lim_{x \to 0}\frac{x^{2}}{\ln(x+1)}\\
+&=\lim_{x \to 0}\frac{x}{\frac{\ln(x+1)}{x}}:
+\begin{cases}
+\lim_{x \to 0}x=0\\
+\lim_{x \to 0}\frac{\ln(x+1)}{x}=\lim_{X \to 1}\frac{\ln(X)}{X-1}=1
+\end{cases}
+\end{align*}
+\[\textcolor{green}{\text{Par produit, }  \boxed{ \lim_{x \to 0}f(x)=0}  \text{ Or, comme f(0)=0 donc f est continue en 0 } }\]
 \end{itemize}
 %\item[b.] Etudier la dérivabilité de $f$ en $-1$ et en $0$ et interpréter graphiquement les résultats.$\textbf{1 pt}$
 \end{enumerate}
