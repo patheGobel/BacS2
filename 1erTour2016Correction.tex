@@ -604,7 +604,38 @@ $$
 \end{align*}
 \[\textcolor{green}{\text{Par produit, }  \boxed{ \lim_{x \to 0}f(x)=0}  \text{ Or, comme f(0)=0 donc f est continue en 0 } }\]
 \end{itemize}
-%\item[b.] Etudier la dérivabilité de $f$ en $-1$ et en $0$ et interpréter graphiquement les résultats.$\textbf{1 pt}$
+\item[b.] Etudions la dérivabilité de $f$ en $-1$ et en $0$ et interprétons graphiquement les résultats.$\textbf{1 pt}$
+\begin{itemize}
+\item \underline{\textcolor{green}{Dérivabilité de f en -1}}
+
+\[f \text{est continue en -1 ssi } \lim_{x \to -1^{-}}\frac{f(x)-f(-1)}{x+1}=\lim_{x \to -1^{+}}\frac{f(x)-f(-1)}{x+1} \]
+\begin{itemize}
+\item \underline{\textcolor{green}{En $-1^{-}$}}
+
+\begin{align*}
+\lim_{x \to -1^{-}}\frac{f(x)-f(-1)}{x+1}&=\lim_{x \to -1^{-}}\frac{(x+1)e^{-x-1}}{x+1}\\
+&=\lim_{x \to -1^{-}}e^{-x-1}=1
+\end{align*}
+\[\textcolor{green}{ \boxed{ \lim_{x \to -1^{-}} \frac{f(x)-f(-1)}{x+1}=1} \text{ donc f est dérivable à gauche de -1} } \]
+
+%\item \underline{\textcolor{green}{En $-1^{+}$}}
+%\begin{align*}
+%\lim_{x \to -1^{-}}\frac{f(x)-f(-1)}{x+1}&=\lim_{x \to -1^{-}}\frac{\frac{x^{2}}{\ln(x+1)}}{x+1}\\
+%&=\lim_{x \to -1^{-}}\frac{x^{2}}{(x+1)\ln(x+1)}:
+%\begin{cases}
+%\lim_{x \to -1^{-}}x^{2}=1\\
+%\lim_{x \to -1^{-}}(x+1)\ln(x+1)
+%\end{cases}
+%\end{align*}
+\end{itemize}
+
+%\item \underline{\textcolor{green}{Dérivabilité de f en 0}}
+%\[f \text{est continue en 0 ssi } \lim_{x \to 0}\frac{f(x)-f(-1)}{x+1}=a\in\mathbb{R}\]
+%\begin{itemize}
+%\item
+%\end{itemize}
+
+\end{itemize}
 \end{enumerate}
 %\item
 %\begin{enumerate}
