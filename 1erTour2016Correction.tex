@@ -618,15 +618,17 @@ $$
 \end{align*}
 \[\textcolor{green}{ \boxed{ \lim_{x \to -1^{-}} \frac{f(x)-f(-1)}{x+1}=1} \text{ donc f est dérivable à gauche de -1} } \]
 
-%\item \underline{\textcolor{green}{En $-1^{+}$}}
-%\begin{align*}
-%\lim_{x \to -1^{-}}\frac{f(x)-f(-1)}{x+1}&=\lim_{x \to -1^{-}}\frac{\frac{x^{2}}{\ln(x+1)}}{x+1}\\
-%&=\lim_{x \to -1^{-}}\frac{x^{2}}{(x+1)\ln(x+1)}:
-%\begin{cases}
-%\lim_{x \to -1^{-}}x^{2}=1\\
-%\lim_{x \to -1^{-}}(x+1)\ln(x+1)
-%\end{cases}
-%\end{align*}
+\item \underline{\textcolor{green}{En $-1^{+}$}}
+\begin{align*}
+\lim_{x \to -1^{+}}\frac{f(x)-f(-1)}{x+1}&=\lim_{x \to -1^{+}}\frac{\frac{x^{2}}{\ln(x+1)}}{x+1}\\
+&=\lim_{x \to -1^{+}}\frac{x^{2}}{(x+1)\ln(x+1)}:
+\begin{cases}
+\lim_{x \to -1^{+}}x^{2}=1\\
+\lim_{x \to -1^{+}}(x+1)\ln(x+1)=0^{+}
+\end{cases}
+\end{align*}
+\[\text{Par quotient:} \textcolor{green}{ \boxed{ \lim_{x \to -1^{+}} \frac{f(x)-f(-1)}{x+1}=+\infty} \text{ donc f n'est pas dérivable à droite de -1} } \]
+
 \end{itemize}
 
 %\item \underline{\textcolor{green}{Dérivabilité de f en 0}}
