@@ -412,7 +412,7 @@ $\forall x \in ]-\frac{1}{2},+\infty[$, $g'(x)<0$ donc $g$ est décroissante
 Dressons le tableau de variations de g. \textbf{1 pt}
 
 \begin{tikzpicture}
- \tkzTabInit{$x$/1,$f'$/1,$f$/2}{$-1$,$-\frac{1}{2}$,$+\infty$}
+ \tkzTabInit{$x$/1,$g'$/1,$g$/2}{$-1$,$-\frac{1}{2}$,$+\infty$}
  \tkzTabLine{,+,z,-,}
  \tkzTabVar{-/$-\infty$,+/$0.39$,-/$-\infty$}
  \tkzTabVal{2}{3}{0.5}{$0$}{0}
@@ -665,7 +665,7 @@ Si $x \in ]-1, +\infty[, f(x)=\frac{x^{2}}{\ln(x+1)}$
 
 $f'(x)=\frac{2x\ln(x+1)-\frac{x^{2}}{x+1}}{\ln^{2}(x+1)}=\frac{-x\left( 2\ln(x+1)-\frac{x}{x+1}\right) }{\ln^{2}(x+1)}$ or $g(x)=-2\ln(x+1)+\frac{x}{x+1}$
 
-\[\text{D'où  }\textcolor{green}{ \boxed{ \lim_{x \to 0}f'(x)=\frac{-xg(x)}{\ln^{2}(x+1)} } } \text{sur} ]-1, +\infty[\]
+\[\text{D'où  }\textcolor{green}{ \boxed{ f'(x)=\frac{-xg(x)}{\ln^{2}(x+1)} } } \text{sur} ]-1, +\infty[\]
 
 Calculons $f'(x)$ sur $]-\infty, -1[$. $\textbf{0,5 pt}$
 
@@ -673,7 +673,7 @@ Si $]-\infty, -1[, f(x)=(x+1)e^{-x-1}$
 
 $ f'(x)=(x+1)e^{-x-1}=e^{-x-1}-(x+1)e^{-x-1}=-xe^{-x-1} $
 
-\[\text{D'où  }\textcolor{green}{ \boxed{ \lim_{x \to 0}f'(x)=-xe^{-x-1} } }\text{sur} ]-\infty, -1[\]
+\[\text{D'où  }\textcolor{green}{ \boxed{ f'(x)=-xe^{-x-1} } }\text{sur} ]-\infty, -1[\]
 
 \item[b.] Etudions les variations de $f$ 
 \begin{itemize}
@@ -684,13 +684,13 @@ $ f'(x)=(x+1)e^{-x-1}=e^{-x-1}-(x+1)e^{-x-1}=-xe^{-x-1} $
 \[\text{D'après la partie A question b), }\]
 
 \[ \forall x \in \left( ]-1;\alpha[\right),\quad -x>0 \text{ et } g(x)<0 \text{ donc } -xg(x)<0\implies f'(x)<0\]
-\[ \forall x \in \left( ]0;+\infty[\right),\quad -x<0 \text{ et } g(x)<0 \text{ donc } -xg(x)>0\implies f'(x)>0\]
-\[ \forall x \in \left( ]\alpha;0[\right),\quad -x<0 \text{ et } g(x)>0 \text{ donc } -xg(x)<0\implies f'(x)<0\]
+\[ \forall x \in \left( [0;+\infty[\right),\quad -x<0 \text{ et } g(x)<0 \text{ donc } -xg(x)\geq 0\implies f'(x)\geq 0\]
+\[ \forall x \in \left( [\alpha;0]\right),\quad -x>0 \text{ et } g(x)>0 \text{ donc } -xg(x)\geq 0\implies f'(x)\geq 0\]
 
 En résumé :
 \textcolor{green}{
-\[ \forall x \in \left( ]-1;\alpha[\cup ]\alpha;0[ \right), f'(x)<0 \text{ donc f est décroissante }\]
-\[ \forall x \in \left( ]0;+\infty[ \right)  , f'(x)>0 \text{ donc f est décroissante      }\]
+\[ \forall x \in \left( ]-1;\alpha[ \right), f'(x) < 0 \text{ donc f est décroissante }\]
+\[ \forall x \in \left( [\alpha;+\infty[ \right)  , f'(x) \geq 0 \text{ donc f est décroissante      }\]
 }
 \item Variation de f sur $]-\infty, -1[$:
 \[\text{sur } ]-\infty, -1[,f'(x)=-xe^{-x-1} \text{ le signe de f' dépend de -x } \]
@@ -698,7 +698,16 @@ En résumé :
 \[\forall \in  ]-\infty, -1[, -x>0, f'(x)>0 \text{ donc f est croissante }\]
 }
 \end{itemize}
-%dresser son tableau de variations.$\textbf{1 pt}$
+Dressons son tableau de variations.$\textbf{1 pt}$
+
+\begin{tikzpicture}
+ \tkzTabInit{$x$/1,$f'$/1,$f$/2}{$-\infty$,$-1$,$\alpha$,$+\infty$}
+ \tkzTabLine{,+,z,-,z,+,+}
+ \tkzTabVar{-/$-\infty$,+/$0$,-/$f(\alpha)$,+/$+\infty$}
+ \tkzTabVal{2}{3}{1.5}{$0$}{0}
+ % Add a movable label
+ %\node at (3.5, -1.5) {$7$};
+\end{tikzpicture}
 \end{enumerate}
 %\item Soit $h$ la restriction de $f$ à $x \in ]0, +\infty[$.
 %\begin{enumerate}
