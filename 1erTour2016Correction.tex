@@ -415,7 +415,8 @@ Dressons le tableau de variations de g. \textbf{1 pt}
  \tkzTabInit{$x$/1,$f'$/1,$f$/2}{$-1$,$-\frac{1}{2}$,$+\infty$}
  \tkzTabLine{,+,z,-,}
  \tkzTabVar{-/$-\infty$,+/$0.39$,-/$-\infty$}
- %\tkzTabVal{2}{3}{0.5}{$\pi$}{0}
+ \tkzTabVal{2}{3}{0.5}{$0$}{0}
+ \tkzTabVal{1}{2}{0.4}{$\alpha$}{0}
  % Add a movable label
  %\node at (3.5, -1.5) {$7$};
 \end{tikzpicture}
@@ -430,7 +431,11 @@ $g(0)=-2\ln(0+1)+\frac{0}{0+1}=0$
 
 Montrons que l’équation $g(x) = 0$ admet exactement deux solutions dont l’une que l’on désigne $\alpha \in ]-0,72, -0,71[.$ \textbf{0,25 +0,5 pt}
 
-\textcolor{green}{\underline{Existant de la première des solutions:}}
+\textcolor{green}{\underline{Existant de la première solution:}}
+
+Comme \textcolor{green}{g(0)=0} donc 0 est solution de l'équation $g(x) = 0$
+
+\textcolor{green}{\underline{Existant de la deuxiéme solution:}}
 
 Les solutions existes ssi $g(-0,72)\times g(-0,71)<0$
 
@@ -442,15 +447,6 @@ Donc il existe une solution $\alpha \in ]-0,72, -0,71[$
 
 Comme $g$ est continue et strictement coissant sur $]-0,72, -0,71[$ donc la solution est unique.
 
-\textcolor{green}{\underline{Existant de la deuxiéme des solutions:}}
-
-La solution existe car $g(]-\frac{1}{2};+\infty[)=]0,39:-\infty[$. Nommenons la $\beta$
-
-\textcolor{green}{\underline{inicité:}}
-
-Comme $g$ est continue et strictement coissant sur $]-\frac{1}{2};+\infty[$ donc la solution est unique.
-
-En conclusion, $g(x)$ admet deux solutions sur $Dg$
 \item[b.] Déterminons le signe de $g(x)$. \textbf{0,5 pt}
 
 D'après le tableau de variation, 
@@ -669,7 +665,7 @@ Si $x \in ]-1, +\infty[, f(x)=\frac{x^{2}}{\ln(x+1)}$
 
 $f'(x)=\frac{2x\ln(x+1)-\frac{x^{2}}{x+1}}{\ln^{2}(x+1)}=\frac{-x\left( 2\ln(x+1)-\frac{x}{x+1}\right) }{\ln^{2}(x+1)}$ or $g(x)=-2\ln(x+1)+\frac{x}{x+1}$
 
-\[\text{D'où  }\textcolor{green}{ \boxed{ \lim_{x \to 0}f'(x)=\frac{-xg(x)}{\ln^{2}(x+1)} } }\]
+\[\text{D'où  }\textcolor{green}{ \boxed{ \lim_{x \to 0}f'(x)=\frac{-xg(x)}{\ln^{2}(x+1)} } } \text{sur} ]-1, +\infty[\]
 
 Calculons $f'(x)$ sur $]-\infty, -1[$. $\textbf{0,5 pt}$
 
@@ -677,9 +673,19 @@ Si $]-\infty, -1[, f(x)=(x+1)e^{-x-1}$
 
 $ f'(x)=(x+1)e^{-x-1}=e^{-x-1}-(x+1)e^{-x-1}=-xe^{-x-1} $
 
-\[\text{D'où  }\textcolor{green}{ \boxed{ \lim_{x \to 0}f'(x)=-xe^{-x-1} } }\]
+\[\text{D'où  }\textcolor{green}{ \boxed{ \lim_{x \to 0}f'(x)=-xe^{-x-1} } }\text{sur} ]-\infty, -1[\]
 
-%\item[b.] Etudier les variations de $f$ et dresser son tableau de variations.$\textbf{1 pt}$
+%\item[b.] Etudions les variations de $f$ 
+
+%\[\text{sur } ]-1, +\infty[,f'(x)=\frac{-xg(x)}{\ln^{2}(x+1)} \text{ le signe de f' dépend de son numérateur car } \]
+%\[\forall x \in ]-1, +\infty[, \ln^{2}(x+1)>0\]
+
+%\[\text{D'après la partie A question b), }\]
+
+%\[ \forall x \in \left( ]-1;\alpha[\cup]\beta;+\infty[\right),\quad g(x)<0 \text{ donc } -xg(x)<0 \]
+
+%\[ \forall x \in \left( ]\alpha;\beta[\right),\quad g(x)>0 \]
+%dresser son tableau de variations.$\textbf{1 pt}$
 \end{enumerate}
 %\item Soit $h$ la restriction de $f$ à $x \in ]0, +\infty[$.
 %\begin{enumerate}
