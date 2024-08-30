@@ -735,14 +735,21 @@ $h^{-1}$ a le même sens de variation que $h$ donc $h^{-1}$ est croissante sur $
 \end{figure}
 \end{enumerate}
 \end{enumerate}
-%\subsection*{\centering Partie C}
-%Soit m la fonction définie par $m(x)=\frac{\ln(x+1)}{x^{2}}-\frac{1}{x(x+1)}$
-%\begin{enumerate}
-%\item
-%\begin{enumerate}
-%\item[a.] Déterminer les fonctions $u$ et $v$ telles que pour tout $x \in ]0, +\infty[$ ,\\ $m(x) = u'(x)v(x)+u(x)v'(x)$. $\textbf{0,25 pt}$
-%\item[b.] En déduire la fonction $H$ définie sur $]0, +\infty[$ telle que $H (x) = m(x)$ puis calculer 
-%$\int_{1}^{2}\frac{1}{f(x)}dx$.$\textbf{ 0,75 pt}$
-%\end{enumerate}
-%\end{enumerate}
+\subsection*{\centering Partie C}
+Soit m la fonction définie par $m(x)=\frac{\ln(x+1)}{x^{2}}-\frac{1}{x(x+1)}$
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item[a.] Déterminons les fonctions $u$ et $v$ telles que pour tout $x \in ]0, +\infty[$ ,\\ $m(x) = u'(x)v(x)+u(x)v'(x)$. $\textbf{0,25 pt}$
+
+Dérivons $\left( \frac{\ln(x+1)}{x} \right) $ pour voir si on va trouver $m(x)$:
+
+$\left(\ln(x+1) \times \frac{1}{x} \right)'=\frac{1}{x+1}\times \frac{1}{x}+\ln(x+1) \times \frac{-1}{x^{2}}=\frac{\ln(x+1)}{x^{2}}-\frac{1}{(x+1)x}$
+
+\textcolor{green}{Donc $u(x)=\ln(x+1)$ et $v(x)=\frac{1}{x}$}
+
+\item[b.] En déduire la fonction $H$ définie sur $]0, +\infty[$ telle que $H'(x) = m(x)$ puis calculer 
+$\int_{1}^{2}\frac{1}{f(x)}dx$.$\textbf{ 0,75 pt}$
+\end{enumerate}
+\end{enumerate}
 \end{document}
