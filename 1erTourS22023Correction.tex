@@ -5,7 +5,8 @@
 
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{hyperref}
+%\usepackage{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
 \usepackage{verbatim}
 
 \usepackage{color, soul}
@@ -156,8 +157,37 @@ $i$&&$2i$&$1-i$&\\
 \textcolor{green}{\boxed{ g(z)=2z-1-i }} \textbf{ 0,5 points}
 \]
 3) Résolvons dans \( \mathbb{C} \) l'équation \( P(z) = 0 \). \\
-%4) Placer les points \( A \), \( B \) et \( C \) dans le repère, avec \( z_A = 1 \), \( z_B = i \), et \( z_C = \frac{1+i}{2} \). \\
-%5) Démontrer que \( C \) est le milieu de \( [AB] \) et qu'il appartient à l'ensemble \( P \). \\
+
+\begin{align*}
+p(z)=0&\implies (z-1)(z-i)(2z-1-i)=0\\
+&(z-1)=0 \text{ ou }(z-i)=0 \text{ ou } (2z-1-i)=0\\
+&z=1 \text{ ou }z=i \text{ ou } z=\frac{1+i}{2}
+\end{align*}
+\[
+\textcolor{green}{\boxed{ S=\left\lbrace 1,i,\frac{1+i}{2} \right\rbrace  }} \textbf{ 0,5 points}
+\]
+4) Plaçons les points \( A \), \( B \) et \( C \) dans le repère, avec \( z_A = 1 \), \( z_B = i \), et \( z_C = \frac{1+i}{2} \). \\ 
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{repère.png}
+\caption{Courbe de (Cf)}
+\label{fig:monimage}
+\end{figure}
+\href{https://www.geogebra.org/classic/kdbk8kpp}{Clique ici pour voir la figure sur géogébra}
+
+5) Démontrons que \( C \) est le milieu de \( [AB] \)
+
+\( C \) est le milieu de \( [AB] \) ssi $\begin{pmatrix}x_{C} \\ \\ y_{C}\end{pmatrix}=
+\begin{pmatrix}\frac{x_{B}-x_{A}}{2} \\ \\ \frac{y_{B}-y_{A}}{2}\end{pmatrix}$
+
+En effet, $\begin{pmatrix}\frac{x_{B}-x_{A}}{2} \\ \\ \frac{y_{B}-y_{A}}{2}\end{pmatrix}=
+\begin{pmatrix}\frac{1}{2} \\ \\ \frac{1}{2}i\end{pmatrix}$
+
+Or \( z_C = \frac{1+i}{2} \) donc \( C \) est bien le milieu de \( [AB] \)
+
+%Démontrons que \( C \) appartient à l'ensemble \( (E) \). \\
+
 %6) Déterminer l'affixe du point \( G \), barycentre du système \( \{(A,1), (B,1), (O,2)\} \). \\
 %7) Déterminer et construire l'ensemble \( P \). \\
 %8) Le jeune agriculteur atteindra-t-il son objectif ?
