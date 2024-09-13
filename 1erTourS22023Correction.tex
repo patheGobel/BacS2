@@ -115,7 +115,7 @@ P(z) = 2z^3 - 3(1+i)z^2 + 4iz + 1 - i
 \]
 Il souhaite cultiver dans l'ensemble des points \( M \) de son plan de représentation tels que :
 \[
-||\overrightarrow{MA} + \overrightarrow{MA} + 2\overrightarrow{MO}|| < 2
+||\overrightarrow{MA} + \overrightarrow{MA} + 2\overrightarrow{MO}|| \leq 2
 \]\\
 qui contient un point du segment \( [AB] \).
 
@@ -186,8 +186,27 @@ En effet, $\begin{pmatrix}\frac{x_{B}-x_{A}}{2} \\ \\ \frac{y_{B}-y_{A}}{2}\end{
 
 Or \( z_C = \frac{1+i}{2} \) donc \( C \) est bien le milieu de \( [AB] \)
 
-%Démontrons que \( C \) appartient à l'ensemble \( (E) \). \\
+Démontrons que \( C \) appartient à l'ensemble \( (E) \). \\
 
+\( C \) appartient à l'ensemble \( (E) \) ssi 
+$
+||\overrightarrow{CA} + \overrightarrow{CB} + 2\overrightarrow{CO}|| \leq 2
+$
+
+$
+\overrightarrow{CA}=\begin{pmatrix}1-\frac{1}{2} \\ \\ 0-\frac{1}{2}i\end{pmatrix},
+\overrightarrow{CB}=\begin{pmatrix}0-\frac{1}{2} \\ \\ i-\frac{1}{2}i\end{pmatrix},
+\overrightarrow{CO}=\begin{pmatrix}0-\frac{1}{2} \\ \\ 0-\frac{1}{2}i\end{pmatrix}
+$
+
+\begin{align*}
+||\overrightarrow{CA} + \overrightarrow{CB} + 2\overrightarrow{CO}|| \leq 2 &\implies
+||1-\frac{1}{2}-\frac{1}{2}-\frac{1}{2}-\frac{1}{2}i+i-\frac{1}{2}i-\frac{1}{2}i|| \leq 2\implies
+||-\frac{1}{2}-\frac{1}{2}i|| \leq 2 \\
+&\implies \sqrt{\left( -\frac{1}{2} \right)^{2}+\left( -\frac{1}{2} \right)^{2} } \leq 2\implies
+\frac{\sqrt{2}}{2}\leq 2\quad \text{Cqfd.}
+\end{align*}
+\text{Donc C est bien un point de l'ensemble (E)}
 %6) Déterminer l'affixe du point \( G \), barycentre du système \( \{(A,1), (B,1), (O,2)\} \). \\
 %7) Déterminer et construire l'ensemble \( P \). \\
 %8) Le jeune agriculteur atteindra-t-il son objectif ?
