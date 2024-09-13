@@ -111,7 +111,7 @@ b)
 \section*{\textcolor{red}{\underline{EXERCICE 2} (4 points) }}
 Un jeune agriculteur décide de pratiquer la culture sous serre dans son champ. Il place dans un repère orthonormal \( (O; \vec{u}, \vec{v}) \) deux points \( A \) et \( B \) dont les affixes respectives \( z_A \) et \( z_B \) sont des racines du polynôme \( P \) défini par :
 \[
-P(z) = 2z^3 - 3(1+i)z^2 + 4iz + 1 - i
+P(z) = 2z^3 - 3(1+i)z^2 + 4iz + 1 - i \text{ où } z\in\mathbb{Z}
 \]
 Il souhaite cultiver dans l'ensemble des points \( M \) de son plan de représentation tels que :
 \[
@@ -166,7 +166,9 @@ p(z)=0&\implies (z-1)(z-i)(2z-1-i)=0\\
 \[
 \textcolor{green}{\boxed{ S=\left\lbrace 1,i,\frac{1+i}{2} \right\rbrace  }} \textbf{ 0,5 points}
 \]
-4) Plaçons les points \( A \), \( B \) et \( C \) dans le repère, avec \( z_A = 1 \), \( z_B = i \), et \( z_C = \frac{1+i}{2} \). \\ 
+4) On pose\( z_A = 1 \), \( z_B = i \), \( z_C = \frac{1}{2}+\frac{1}{2}i \).
+\begin{itemize}
+\item[a)] Plaçons les points \( A \), \( B \) et \( C \) d'affixes respectives \( z_A\), \( z_B \) et \( z_C \) dans le repère orthonormal \( (O; \vec{u}, \vec{v}) \) en choisissant comme unité graphique 4 cm. \\ 
 \newpage
 \begin{figure}[h]
 \centering
@@ -176,7 +178,7 @@ p(z)=0&\implies (z-1)(z-i)(2z-1-i)=0\\
 \end{figure}
 \href{https://www.geogebra.org/classic/kdbk8kpp}{Clique ici pour voir la figure sur géogébra}
 
-5) Démontrons que \( C \) est le milieu de \( [AB] \)
+\item[b)] Démontrons que \( C \) est le milieu de \( [AB] \)
 
 \( C \) est le milieu de \( [AB] \) ssi $\begin{pmatrix}x_{C} \\ \\ y_{C}\end{pmatrix}=
 \begin{pmatrix}\frac{x_{B}-x_{A}}{2} \\ \\ \frac{y_{B}-y_{A}}{2}\end{pmatrix}$
@@ -206,9 +208,18 @@ $
 &\implies \sqrt{\left( -\frac{1}{2} \right)^{2}+\left( -\frac{1}{2} \right)^{2} } \leq 2\implies
 \frac{\sqrt{2}}{2}\leq 2\quad \text{Cqfd.}
 \end{align*}
-\text{Donc C est bien un point de l'ensemble (E)}
-%6) Déterminer l'affixe du point \( G \), barycentre du système \( \{(A,1), (B,1), (O,2)\} \). \\
-%7) Déterminer et construire l'ensemble \( P \). \\
+\text{Donc \( C \) est bien un point de l'ensemble \( (E) \)}
+
+\item[c)] Déterminons l'affixe \( z_{G} \) du point \( G \), barycentre du système \( \{(A,1), (B,1), (O,2)\} \),\\ puis placer \( G \).
+
+%\( G \) barycentre du système \( \{(A,1), (B,1), (O,2)\} \) donc
+%\( \overrightarrow{AG}=\frac{1}{4}\overrightarrow{AB}+\frac{1}{2}\overrightarrow{AO}  \)
+\end{itemize}
+
+%5) Déterminer puis construire l'ensemble \( P \) des points \( M \) du plan tels que 
+%$
+%||\overrightarrow{CA} + \overrightarrow{CB} + 2\overrightarrow{CO}|| \leq 2.
+%$
 %8) Le jeune agriculteur atteindra-t-il son objectif ?
 
 \end{document}
