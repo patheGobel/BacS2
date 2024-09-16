@@ -25,6 +25,8 @@
 
 \usepackage[margin=2cm]{geometry}
 
+\usepackage{enumitem}
+
 \begin{document}
 
 \begin{minipage}{0.8\textwidth}
@@ -87,42 +89,42 @@ qui contient un point du segment \( [AB] \).
 8) Le jeune agriculteur atteindra-t-il son objectif ?
 
 \section*{\textcolor{red}{\underline{EXERCICE 3} (4 points) }}
-On considère la suite numérique \( (u_n)_{n \in \mathbb{N}} \) définie par :
 \[
-u_{n+1} = \frac{u_n + 4}{u_n + 3}
-\]
-1) Calculer \( u_1 \) et \( u_2 \). \\
-2) Démontrer par récurrence que \( u_n \geq \sqrt{3} \) pour tout \( n \in \mathbb{N} \). \\
-3) Soit \( f(x) = \frac{1}{x} + \frac{3}{4}x \). Étudier le sens de variation de \( f \). \\
-4) En déduire que la suite \( (u_n) \) est strictement décroissante. \\
-5) Montrer que \( (u_n) \) est convergente et déterminer sa limite.
-
-\section*{\textcolor{red}{\underline{Problème} (9 points) }}
-\subsection*{Partie A}
-On considère l'équation différentielle :
-\[
-(P) : y' + y = 3e^{2x} + 2
-\]
-1) Résoudre l'équation homogène associée \( (P') : y' + y = 0 \). \\
-2) Déterminer une solution particulière de \( (P) \). \\
-3) En déduire l'ensemble des solutions de \( (P) \). \\
-4) Déterminer la solution dont la courbe passe par l'origine.
-
-\subsection*{Partie B}
-On considère la fonction définie par :
-\[
-f(x) = 
+\text{On considère la suite numérique } (u_n)_{n \in \mathbb{N}} \text{ définie par :}
 \begin{cases}
-(6x-2)e^{-2x} + 2 & \text{si } x < 0 \\
-x + \ln(1-x) & \text{si } x > 0
+U_{0}=6\\
+U_{n+1}=\frac{1}{U_{n}}+\frac{3}{4}U_{n}, n\in\mathbb{N}
 \end{cases}
 \]
-1) Déterminer l'ensemble de définition de \( f \). \\
-2) Étudier les limites aux bornes de \( D_f \). \\
-3) Étudier la continuité de \( f \) en 0. \\
-4) Étudier la dérivabilité de \( f \) en 0. \\
-5) Calculer \( f'(x) \) et dresser son tableau de variations. \\
-6) Résoudre \( f(x) = 0 \) sur l'intervalle \( ]1,2[ \). \\
-7) Calculer l'aire sous la courbe entre \( x=2 \) et \( x=3 \).
+\begin{enumerate}
+\item[1)] Calculer \( u_1 \) et \( u_2 \).\textbf{(0.5pt)}
 
+\item[2)] Démontrer par récurrence que: \( \forall n\in\mathbb{N},\quad u_n \geq \sqrt{3} \).\textbf{(01pt)}
+
+\item[3)] Soit $f$ la fonction définie sur $]0, +\infty[$ par \( f(x) = \frac{1}{x} + \frac{3}{4}x \).
+\begin{enumerate}
+\item[a)] Etudier le sens de variations de $f$.\textbf{(01pt)}
+\item[b)] En déduire par récurrence que $(u_n)_{n \in \mathbb{N}}$ est strictement décroissante.\textbf{(0.5pt)}
+\end{enumerate}
+
+\item[4)] Montrer que $(u_n)_{n \in \mathbb{N}}$ est convergente et déterminer sa limite.\textbf{(01pt)}
+
+\end{enumerate}
+\section*{\textcolor{red}{\underline{PROBLÈME } (9 pts) }}
+\section*{\textcolor{red}{\underline{Partie A }(2 pts)}}
+On considère l'équation différentielle $(E):\frac{1}{2}y'+y=3e^{-2x}+2.$
+
+\renewcommand{\labelenumi}{\theenumi)}
+\begin{enumerate}[label=\arabic*)]
+    \item Résoudre l'équation différentielle $(E'):\frac{1}{2}y'+y=0$.
+    \item Soit $h$ une fonction définie sur $\mathbb{R}$ par $h(x)=axe^{-2x}+b$ où $a$ et $b$ sont  des réels.\\
+        Déterminer $a$ et $b$ pour que $h$ soit une solution de $(E).$
+    \item
+    \begin{enumerate}[label=\alph*)]
+        \item Soit $g$ une fonction dérivable sur $\mathbb{R}.$ Posons $a=6$ et $b=2.$\\
+        Démontrer que $g$ est solution de $(E)$ si et seulement si $g-h$ est solution  de $(E').$
+        \item En déduire l'ensemble des solutions de $(E)$.
+    \end{enumerate}
+    \item Déterminer la solution $k$ de $(E)$ dont la courbe représentative $(C_{k})$ dans un repère orthonormal $(O;\vec{i},\vec{j})$ passe par le point O.
+\end{enumerate}
 \end{document}
