@@ -281,10 +281,18 @@ u_{2}&=\frac{1}{\frac{14}{3}}+\frac{3}{4}\times\frac{14}{3}\\
 \item[2)] Démontrons par récurrence que: \( \forall n\in\mathbb{N},\quad u_n \geq \sqrt{3} \).\hfill\textbf{(01pt)}
 
 \textbf{Initialisation:} \\
-\text{Si} $n=k=0$: $u_{1}=\frac{14}{3}\geq \sqrt{3}$\\
-\text{Si} $n=k=1$: $u_{2}=\frac{26}{7}\geq \sqrt{3}$\\
-\textbf{Supposons que la propiété est vrai au rang $n$.Vérifions au rang $k+1$} \\
-$n=k+1$
+\text{au rang} $0$: $u_{0}=6\geq \sqrt{3}$\\
+\text{au rang} $1$: $u_{1}=\frac{26}{7}\geq \sqrt{3}$\\
+\textbf{Hérédité:} \\
+Supposons que la propiété est vraie au rang $n$ c'est-à-dire \( \forall n \in \mathbb{N}\quad u_{n} \geq \sqrt{3} \) et montrons que \( \forall n \in \mathbb{N}\quad u_{n+1} \geq \sqrt{3} \)\\
+\textbf{En langage mathématique plus condensé:}\\
+Montrons que \( \forall n \in \mathbb{N}\), si \(u_{n} \geq \sqrt{3}\) alors \(u_{n+1} \geq \sqrt{3}\)
+
+En supposant \(u_{n} \geq \sqrt{3}\), montrer \(u_{n+1} \geq \sqrt{3}\) revient à montrer \(u_{n+1}-\sqrt{3} \geq 0\).\\
+\(u_{n+1}-\sqrt{3} \geq 0\implies\frac{1}{u_{n}}+\frac{3u_{n}^{2}}{4u_{n}}-\frac{\sqrt{3}u_{n}}{u_{n}} \geq 0 \implies \frac{1+3u_{n}^{2}+\sqrt{3}u_{n}}{u_{n}}\)
+%Vérifions au rang $n+1$ \\
+%\textbf{C'est-à-dire  u_{n} \geq \sqrt{3}$ alors $u_{n+1} \geq \sqrt{3}$}\\
+
 \begin{align*}
 u_{k+1+1}&=\frac{1}{u_{k+1}}+\frac{3}{4}u_{k+1}\\
 &=\frac{1}{\frac{1}{u_{k}}+\frac{3}{4}u_{k}}+\frac{3}{4}\left(\frac{1}{u_{k}}+\frac{3}{4}u_{k}\right):
