@@ -289,18 +289,27 @@ Supposons que la propiété est vraie au rang $n$ c'est-à-dire \( \forall n \in
 Montrons que \( \forall n \in \mathbb{N}\), si \(u_{n} \geq \sqrt{3}\) alors \(u_{n+1} \geq \sqrt{3}\)
 
 En supposant \(u_{n} \geq \sqrt{3}\), montrer \(u_{n+1} \geq \sqrt{3}\) revient à montrer \(u_{n+1}-\sqrt{3} \geq 0\).\\
-\(u_{n+1}-\sqrt{3} \geq 0\implies\frac{1}{u_{n}}+\frac{3u_{n}^{2}}{4u_{n}}-\frac{\sqrt{3}u_{n}}{u_{n}} \geq 0 \implies \frac{1+3u_{n}^{2}+\sqrt{3}u_{n}}{u_{n}}\)
+\(u_{n+1}-\sqrt{3} \geq 0\implies\frac{1}{u_{n}}+\frac{3u_{n}^{2}}{4u_{n}}-\frac{\sqrt{3}u_{n}}{u_{n}} \geq 0 \implies \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}}\)
+
+le signe de \( \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}} \)  dépend du némérateur car
+\( \forall n \in \mathbb{N}\quad u_{n} \geq \sqrt{3}\).
+
+Cherchons le signe du némérateur.
+
+En effet, comme \(u_{n} \geq \sqrt{3}\) donc \(u_{n}^{2} \geq \sqrt{3}u_{n}\) donc \(3u_{n}^{2} \geq \sqrt{3}u_{n}\)
+donc \(1+3u_{n}^{2} \geq \sqrt{3}u_{n}\)
+
+donc \(1+3u_{n}^{2}-\sqrt{3}u_{n} \geq  0\) cqfdp
+
+comme \(u_{n} \geq \sqrt{3}\) donc \(u_{n} \geq 0\) donc \(\frac{1}{u_{n}} \geq 0\) 
+\[
+\begin{cases}
+\frac{1}{u_{n}}\geq 0\\
+1+3u_{n}^{2}-\sqrt{3}u_{n} \geq  0
+\end{cases} \text{Par produit membre à membre, } \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}} \geq  0 \text{ cqfdf}
+\]
 %Vérifions au rang $n+1$ \\
 %\textbf{C'est-à-dire  u_{n} \geq \sqrt{3}$ alors $u_{n+1} \geq \sqrt{3}$}\\
-
-\begin{align*}
-u_{k+1+1}&=\frac{1}{u_{k+1}}+\frac{3}{4}u_{k+1}\\
-&=\frac{1}{\frac{1}{u_{k}}+\frac{3}{4}u_{k}}+\frac{3}{4}\left(\frac{1}{u_{k}}+\frac{3}{4}u_{k}\right):
-\begin{cases}
-\frac{1}{\frac{1}{u_{k}}+\frac{3}{4}u_{k}}\\
-\frac{3}{4}\left(\frac{1}{u_{k}}+\frac{3}{4}u_{k}\right)\\
-\end{cases}
-\end{align*}
 %\item[3)] Soit $f$ la fonction définie sur $]0, +\infty[$ par \( f(x) = \frac{1}{x} + \frac{3}{4}x \).
 %\begin{enumerate}
 %\item[a)] Etudier le sens de variations de $f$.\hfill\textbf{(01pt)}
