@@ -25,6 +25,14 @@
 
 
 \usepackage[margin=2cm]{geometry}
+\usepackage{eso-pic}         % Pour ajouter des éléments en arrière-plan
+
+% Commande pour ajouter du texte en arrière-plan
+\AddToShipoutPicture{
+    \AtTextCenter{%
+        \makebox[0pt]{\rotatebox{45}{\textcolor[gray]{0.9}{\fontsize{5cm}{5cm}\selectfont Pathé BA}}}
+    }
+}
 
 \begin{document}
 
@@ -333,8 +341,11 @@ Comme \( u_{n} \geq \sqrt{3}\), par analogie avec ce qui précède
 
 \textcolor{green}{Donc \( u_{n} \geq \sqrt{3}\) est une suite croissante.}
 \end{enumerate}
-%\item[4)] Montrer que $(u_n)_{n \in \mathbb{N}}$ est convergente et déterminer sa limite.\hfill\textbf{(01pt)}
+\item[4)] Montrons que $(u_n)_{n \in \mathbb{N}}$ est convergente et déterminons sa limite.\hfill\textbf{(01pt)}
 
+\textbf{Convergence:}
+
+\textbf{Déterminons sa limite:}
 \end{enumerate}
 
 \end{document}
