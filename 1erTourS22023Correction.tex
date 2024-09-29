@@ -334,10 +334,35 @@ Calculons la dérivée de \( f(x)\)
 \textcolor{green}{\(\forall x\in[\frac{2\sqrt{3}}{3}, +\infty[ \), \(f'(x)\geq 0\) donc f est croissante.}
 \item[b)] Déduidons-en par récurrence que $(u_n)_{n \in \mathbb{N}}$ est strictement décroissante.\hfill\textbf{(0,5pt)}
 
-On a: \( \frac{2\sqrt{3}}{3} < \sqrt{3} \)
+\textbf{Initialisation:} \\
+\text{au rang} $0$: $u_{0}=6$\\
+\text{au rang} $1$: $u_{1}=\frac{26}{7}$ donc $u_{0} > u_{1}$\\
+\textbf{Hérédité:} \\
+Supposons que la propiété est vraie au rang $n$ c'est-à-dire \( \forall n \in \mathbb{N}\quad u_{n} > u_{n+1} \) et montrons que \( \forall n \in \mathbb{N}\quad u_{n+1} > u_{n+2} \)\\
+\textbf{En langage mathématique plus condensé:}\\
+Montrons que \( \forall n \in \mathbb{N}\), si \(u_{n} \geq \sqrt{3}\) alors \(u_{n+1} \geq \sqrt{3}\)
 
-Comme \( u_{n} \geq \sqrt{3}\), par analogie avec ce qui précède
-\textcolor{green}{(\(\forall x\in[\frac{2\sqrt{3}}{3}, +\infty[ \), \(f'(x)\geq 0\) donc f est croissante.)}
+En supposant \(u_{n} \geq \sqrt{3}\), montrer \(u_{n+1} \geq \sqrt{3}\) revient à montrer \(u_{n+1}-\sqrt{3} \geq 0\).\\
+\(u_{n+1}-\sqrt{3} \geq 0\implies\frac{1}{u_{n}}+\frac{3u_{n}^{2}}{4u_{n}}-\frac{\sqrt{3}u_{n}}{u_{n}} \geq 0 \implies \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}}\)
+
+le signe de \( \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}} \)  dépend du némérateur car
+\( \forall n \in \mathbb{N}\quad u_{n} \geq \sqrt{3}\).
+
+Cherchons le signe du némérateur.
+
+En effet, comme \(u_{n} \geq \sqrt{3}\) donc \(u_{n}^{2} \geq \sqrt{3}u_{n}\) donc \(3u_{n}^{2} \geq \sqrt{3}u_{n}\)
+donc \(1+3u_{n}^{2} \geq \sqrt{3}u_{n}\)
+
+donc \(1+3u_{n}^{2}-\sqrt{3}u_{n} \geq  0\) cqfdp
+
+comme \(u_{n} \geq \sqrt{3}\) donc \(u_{n} \geq 0\) donc \(\frac{1}{u_{n}} \geq 0\) 
+\[
+\begin{cases}
+\frac{1}{u_{n}}\geq 0\\
+1+3u_{n}^{2}-\sqrt{3}u_{n} \geq  0
+\end{cases} \text{Par produit membre à membre, } \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}} \geq  0 \text{ cqfd}
+\]
+\textcolor{green}{Donc la proprié est vrai au rang \(n+1\) d'où \(u_{n} \geq \sqrt{3}\)}
 
 %\textcolor{green}{Donc \( u_{n} \geq \sqrt{3}\) est une suite croissante.}
 \end{enumerate}
