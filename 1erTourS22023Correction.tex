@@ -329,9 +329,9 @@ Calculons la dérivée de \( f(x)\)
 
  or 
  
-\textcolor{green}{\(\forall x\in]0, \frac{2\sqrt{3}}{3}] \), \(f'(x)\leq 0\) donc f est décroissante.}
+\textcolor{green}{\(\forall x\in]0, \frac{2\sqrt{3}}{3}] \), \(f'(x)\leq 0\) donc f est strictement  décroissante.}
 
-\textcolor{green}{\(\forall x\in[\frac{2\sqrt{3}}{3}, +\infty[ \), \(f'(x)\geq 0\) donc f est croissante.}
+\textcolor{green}{\(\forall x\in[\frac{2\sqrt{3}}{3}, +\infty[ \), \(f'(x)\geq 0\) donc f est strictement croissante.}
 \item[b)] Déduidons-en par récurrence que $(u_n)_{n \in \mathbb{N}}$ est strictement décroissante.\hfill\textbf{(0,5pt)}
 
 \textbf{Initialisation:} \\
@@ -340,31 +340,34 @@ Calculons la dérivée de \( f(x)\)
 \textbf{Hérédité:} \\
 Supposons que la propiété est vraie au rang $n$ c'est-à-dire \( \forall n \in \mathbb{N}\quad u_{n} > u_{n+1} \) et montrons que \( \forall n \in \mathbb{N}\quad u_{n+1} > u_{n+2} \)\\
 \textbf{En langage mathématique plus condensé:}\\
-Montrons que \( \forall n \in \mathbb{N}\), si \(u_{n} \geq \sqrt{3}\) alors \(u_{n+1} \geq \sqrt{3}\)
+Montrons que \( \forall n \in \mathbb{N}\), si \(u_{n} > u_{n+1}\) alors \(u_{n+1} > u_{n+2}\)
 
-En supposant \(u_{n} \geq \sqrt{3}\), montrer \(u_{n+1} \geq \sqrt{3}\) revient à montrer \(u_{n+1}-\sqrt{3} \geq 0\).\\
-\(u_{n+1}-\sqrt{3} \geq 0\implies\frac{1}{u_{n}}+\frac{3u_{n}^{2}}{4u_{n}}-\frac{\sqrt{3}u_{n}}{u_{n}} \geq 0 \implies \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}}\)
+(L'ojectif ici sera d'utiliser le fait que f est croissant sur \( [\frac{2\sqrt{3}}{3}, +\infty[ \), en montrant que  \(u_{n}\in [\frac{2\sqrt{3}}{3}, +\infty[ \) et \(u_{n+1}\in [\frac{2\sqrt{3}}{3}, +\infty[ \)) car si deux nombres appartiennent dans un même intervalle, et qu'on les appliquent à une même fonction croissante, elles produisent deux nombres conservant le même sens d'inégalité.
 
-le signe de \( \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}} \)  dépend du némérateur car
-\( \forall n \in \mathbb{N}\quad u_{n} \geq \sqrt{3}\).
+En effet, d'après la reccurence précédente, on a : \(u_{n} \geq \sqrt{3}\) et \(u_{n+1} \geq \sqrt{3}\)
 
-Cherchons le signe du némérateur.
+Comme \( \sqrt{3} \geq \frac{2\sqrt{3}}{3} \)
 
-En effet, comme \(u_{n} \geq \sqrt{3}\) donc \(u_{n}^{2} \geq \sqrt{3}u_{n}\) donc \(3u_{n}^{2} \geq \sqrt{3}u_{n}\)
-donc \(1+3u_{n}^{2} \geq \sqrt{3}u_{n}\)
+donc 
 
-donc \(1+3u_{n}^{2}-\sqrt{3}u_{n} \geq  0\) cqfdp
+\(u_{n} \geq \frac{2\sqrt{3}}{3}\) et \(u_{n+1} \geq \frac{2\sqrt{3}}{3} \implies\) 
+\(u_{n}\in [\frac{2\sqrt{3}}{3}, +\infty[ \) et \(u_{n+1}\in [\frac{2\sqrt{3}}{3}, +\infty[ \)
 
-comme \(u_{n} \geq \sqrt{3}\) donc \(u_{n} \geq 0\) donc \(\frac{1}{u_{n}} \geq 0\) 
-\[
-\begin{cases}
-\frac{1}{u_{n}}\geq 0\\
-1+3u_{n}^{2}-\sqrt{3}u_{n} \geq  0
-\end{cases} \text{Par produit membre à membre, } \frac{1+3u_{n}^{2}-\sqrt{3}u_{n}}{u_{n}} \geq  0 \text{ cqfd}
-\]
-\textcolor{green}{Donc la proprié est vrai au rang \(n+1\) d'où \(u_{n} \geq \sqrt{3}\)}
+Comme \(f\) est croissante sur \([\frac{2\sqrt{3}}{3}, +\infty[ \)
 
-%\textcolor{green}{Donc \( u_{n} \geq \sqrt{3}\) est une suite croissante.}
+donc 
+
+\( f(u_{n})>f(u_{n+1}) \) 
+
+or 
+
+\( f(u_{n})=u_{n+1} \) et \( f(u_{n+1})= u_{n+2}\)
+
+donc \( u_{n+1} > u_{n+2} \)
+
+\textcolor{green}{Donc la proprié est vrai au rang \(n+1\) d'où \( u_{n+1} > u_{n+2} \)}
+
+\textcolor{green}{Donc \( u_{n} \) est une suite décroissante.}
 \end{enumerate}
 %\item[4)] Montrons que $(u_n)_{n \in \mathbb{N}}$ est convergente et déterminons sa limite.\hfill\textbf{(01pt)}
 
