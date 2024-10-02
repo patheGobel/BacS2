@@ -386,8 +386,9 @@ Comme \( (u_{n})_{n} \) est converge alors elle admet une limite finie en \( +\i
 \]
 
 \[ 
-\text{ L'objectif est de déterminer la valeur de \( \ell \) en résolvant l'équation \(f(\ell) = \ell \)}
+\text{ L'objectif est de déterminer la valeur de \( \ell \), qui correspondra à l'une des solutions de l'équation, }
 \]
+\[\text{en résolvant l'équation \(f(x) = x\)}\]
 \[
 \text{En considérant \( \left( u_{n+1}=f(u_{n})=\frac{1}{u_{n}}+\frac{3}{4}u_{n}\quad ou\quad f(x)=\frac{1}{x}+\frac{3}{4}x \right) \) 
  pour ce faire, il faut au préalable} 
@@ -395,14 +396,32 @@ Comme \( (u_{n})_{n} \) est converge alors elle admet une limite finie en \( +\i
 \[ 
 \text{ justifier que \( f \) est continue en \( \ell \) }
 \]
+
 \textbf{\underline{Continuité de \( f \) en \( \ell \)}}
+
 \[
 \forall n\in \mathbb{N}, u_{n} \geq\sqrt{3} \implies \lim_{n \to +\infty}u_{n}\geq\sqrt{3} \implies \ell  \geq\sqrt{3} \implies \ell \in \left[ \frac{2\sqrt{3}}{3}, +\infty\right[ 
 \]
 \[
 \text{ Or  \( f \) est continue sur} \left[ \frac{2\sqrt{3}}{3}, +\infty\right[ 
-\text{ donc \( f \) est continue en } \ell
+\text{ donc \( f \) est continue en } \ell .
 \]
+\textcolor{blue}{Car si une fonction est continue sur un intervalle alors elle l'est sur tous les points de l'intervalle.}
+
+\textbf{\underline{Détermination de la valeur de \( \ell \)}}
+
+Résolvons  \(f(x) = x\implies \frac{1}{x}+\frac{3}{4}x=x\implies x^{2}-4=0 \implies x=2 \text{ ou } x=-2\)
+
+\[
+2 \in \left[ \frac{2\sqrt{3}}{3}, +\infty\right[  \text{ et } -2 \notin \left[ \frac{2\sqrt{3}}{3}, +\infty\right[
+\]
+
+\[
+\text{ D'où }  \ell =2
+\]
+
+Donc la suite \( (u_{n})_{n} \) converge vers \( \ell =2 \)
+
 \end{enumerate}
 
 \end{document}
