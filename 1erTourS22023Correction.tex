@@ -431,13 +431,32 @@ On considère l'équation différentielle \((E):\frac{1}{2}y'+y=3e^{-2x}+2 \).
 
 \renewcommand{\labelenumi}{\theenumi)}
 \begin{enumerate}[label=\arabic*)]
-    \item Résolvons l'équation différentielle \( (E'):\frac{1}{2}y'+y=0 \).\hfill \textbf{(0,25pt)}
+    \item Résolvons l'équation différentielle \( (E'):\frac{1}{2}y'+y=0 \).
     
-		    \( \frac{1}{2}y'+y=0 \implies \frac{y'}{y}=-\frac{1}{2} \implies y=e^{-\frac{1}{2}x}+c\)
+		    \( \frac{1}{2}y'+y=0 \implies \frac{y'}{y}=-\frac{1}{2} \implies y=e^{-\frac{1}{2}x}+c\)\hfill \textbf{(0,25pt)}
     
     	   			\[\textcolor{green}{\boxed{S= \left\lbrace e^{-\frac{1}{2}x}+c \right\rbrace  }}\]
-    %\item Soit $h$ une fonction définie sur $\mathbb{R}$ par $h(x)=axe^{-2x}+b$ où $a$ et $b$ sont  des réels.\\
-        %Déterminer $a$ et $b$ pour que $h$ soit une solution de $(E).$\hfill \textbf{(0,5pt)}
+    	   			
+    \item Soit $h$ une fonction définie sur $\mathbb{R}$ par $h(x)=axe^{-2x}+b$ où $a$ et $b$ sont  des réels.\\
+        Déterminons $a$ et $b$ pour que $h$ soit une solution de $(E).$\hfill \textbf{(0,5pt)}
+        \( \frac{1}{2}h(x)'+h(x)=3e^{-2x}+2 \implies \frac{1}{2}(axe^{-2x}+b)'+(axe^{-2x}+b)=3e^{-2x}+2 \)
+        
+        \( \implies \frac{1}{2}(ae^{-2x}-2axe^{-2x})+(axe^{-2x}+b)=3e^{-2x}+2 \)
+        
+        \( \implies \frac{1}{2}ae^{-2x}-axe^{-2x}+axe^{-2x}+b=3e^{-2x}+2 \)
+        
+        \[ 
+        \implies \frac{1}{2}ae^{-2x}+b=3e^{-2x}+2\text{ Par identification:}
+        \begin{cases}
+        \frac{1}{2}a=3\\
+        b=2
+        \end{cases}\implies
+        \begin{cases}
+         a=6\\
+         b=2
+        \end{cases}
+        \]
+\[\text{Donc } \textcolor{green}{\boxed{h(x)=6xe^{-2x}+2}} \]
     %\item
     %\begin{enumerate}[label=\alph*)]
         %\item Soit $g$ une fonction dérivable sur $\mathbb{R}.$ Posons $a=6$ et $b=2.$
