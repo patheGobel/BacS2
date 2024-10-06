@@ -433,9 +433,9 @@ On considère l'équation différentielle \( (E):\frac{1}{2}y'+y=3e^{-2x}+2 \).
 \begin{enumerate}[label=\arabic*)]
     \item Résolvons l'équation différentielle \( (E'):\frac{1}{2}y'+y=0 \).
     
-		    \( \frac{1}{2}y'+y=0 \implies \frac{y'}{y}=-\frac{1}{2} \implies y=e^{-\frac{1}{2}x}+c\)\hfill \textbf{(0,25pt)}
+		    \( \frac{1}{2}y'+y=0 \implies \frac{y'}{y}=-\frac{1}{2} \implies y(x)=ke^{-\frac{1}{2}x}\)\hfill \textbf{(0,25pt)}
     
-    	   			\[\textcolor{green}{\boxed{S= \left\lbrace e^{-\frac{1}{2}x}+c \right\rbrace  }}\]
+    	   			\[\textcolor{green}{\boxed{S= \left\lbrace ke^{-\frac{1}{2}x} \right\rbrace  }}\]
     	   			
     \item Soit $h$ une fonction définie sur $\mathbb{R}$ par $h(x)=axe^{-2x}+b$ où $a$ et $b$ sont  des réels.\\
         Déterminons $a$ et $b$ pour que $h$ soit une solution de $(E).$\hfill \textbf{(0,5pt)}
@@ -501,7 +501,19 @@ Or \( h(x)=6xe^{-2x}+2 \) donc
 \text{Donc si \( g-h \) est solution de \( (E') \) alors \( g \) est solution de \( (E) \) }  
 			        
 \text{Conclusion: $g$ est solution de $(E)$ si et seulement si \( g-h \) est solution  de \( E' \)}		        
-        %\item Déduisons-en l'ensemble des solutions de $(E)$.\hfill \textbf{(0,5pt)}
+        \item Déduisons-en l'ensemble des solutions de $(E)$.\hfill \textbf{(0,5pt)}
+
+Checher l'ensemble des solutions de \( (E) \) revient à déterminer l'expression de \( g \)
+
+Comme \( g-h \) est solution  de \( (E') \) alors \( g(x)-h(x)= y_{h}(x) \) car les solutions de \( (E') \) sont de la fomre \( y_{h} \)
+\begin{align*}
+g(x)-h(x)&= y_{h}(x)\\
+g(x) - (6xe^{-2x}+2) &= ke^{-\frac{1}{2}x}\\
+g(x)&= ke^{-\frac{1}{2}x}- (6xe^{-2x}+2)\\
+g(x)&= (k + 6x)e^{-\frac{1}{2}x}+2
+\end{align*}
+%\text{ Donc } \textcolor{green}{ \( g(x)= (k + 6x)e^{-\frac{1}{2}x}+2 \) } \hfill \textbf{(0,5pt)}
+\[\text{Donc } \textcolor{green}{\boxed{ g(x)= (k + 6x)e^{-\frac{1}{2}x}+2 }} \]\hfill \textbf{(0,5pt)}
     \end{enumerate}
    % \item Déterminer la solution $k$ de $(E)$ dont la courbe représentative $(C_{k})$ dans un repère orthonormal $(O;\vec{i},\vec{j})$ passe par le point O.\hfill \textbf{(0,25pt)}
 \end{enumerate}
