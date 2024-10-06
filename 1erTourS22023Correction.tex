@@ -466,20 +466,26 @@ On considère l'équation différentielle \( (E):\frac{1}{2}y'+y=3e^{-2x}+2 \).
          \( g \) est solution  de \( E' \). \hfill \textbf{(0,5pt)}
          
          \textcolor{green}{Supposons que \( g \) est solution de \( (E) \) et montrons que \( g-h \) est solution de \( (E') \) }
-	          
+         
+	   \textcolor{green}{C'est-à-dire  \( \frac{1}{2}g'+g = 3e^{-2x}+2  \textcolor{red}{\implies} \frac{1}{2}(g-h)'+(g-h)=0\)}       
+	   
 Si \( g \) est solution de \( (E) \) alors \( \frac{1}{2}g'+g = 3e^{-2x}+2  \) 
 
 Or \( h \) est solution de \( (E) \) donc \( \frac{1}{2}h'+h= 3e^{-2x}+2 \)
-  				        \[
-  				        \text{En faisant la différence membre à membre :}
+  				        \begin{align*}
+  				         \text{En faisant la différence membre à membre :}
                    \underline{
                    \begin{cases}
   				        	 \frac{1}{2}g'+g = 3e^{-2x}+2\\
   				        	 \frac{1}{2}h'+h= 3e^{-2x}+2
-  				        	\end{cases} }
-  				         \]
-  				         \[\quad\frac{1}{2}(g-h)+(g-h)=0\]
+  				        	\end{cases} }\\
+\frac{1}{2}(g'-h')+(g-h)=0\\ 
+\text{ Comme la dérrivée est un opérateur linéaire donc \( g'-h'=(g-h)' \)}\\
+\text{Donc si \( g \) est solution de \( (E) \) alors \( g-h \) est solution de \( (E') \) }
+  				        \end{align*}
+  				         
          \textcolor{green}{Supposons que \( g-h \) est solution de \( (E') \) et montrons que \( g \)}
+
 
 					...........................................................................         
          
