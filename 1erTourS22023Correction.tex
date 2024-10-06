@@ -463,7 +463,7 @@ On considère l'équation différentielle \( (E):\frac{1}{2}y'+y=3e^{-2x}+2 \).
        
         Démontrons que $g$ est solution de $(E)$ si et seulement si
         
-         \( g \) est solution  de \( E' \). \hfill \textbf{(0,5pt)}
+         \( g-h \) est solution  de \( E' \). \hfill \textbf{(0,5pt)}
          
          \textcolor{green}{Supposons que \( g \) est solution de \( (E) \) et montrons que \( g-h \) est solution de \( (E') \) }
          
@@ -484,11 +484,21 @@ Or \( h \) est solution de \( (E) \) donc \( \frac{1}{2}h'+h= 3e^{-2x}+2 \)
 \text{Donc si \( g \) est solution de \( (E) \) alors \( g-h \) est solution de \( (E') \) }
   				        \end{align*}
   				         
-         \textcolor{green}{Supposons que \( g-h \) est solution de \( (E') \) et montrons que \( g \)}
+         \textcolor{green}{Supposons que \( g-h \) est solution de \( (E') \) et montrons que \( g \) est solution de \( (E) \)}
 
-
-					...........................................................................         
+	   \textcolor{green}{C'est-à-dire  \( \frac{1}{2}(g-h)'+(g-h)=0  \textcolor{red}{\implies} \frac{1}{2}g'+g = 3e^{-2x}+2\)}         
          
+Si \( g-h \) est solution de \( (E') \) alors \( \frac{1}{2}(g-h)'+(g-h) = 0 \implies \frac{1}{2}g'-\frac{1}{2}h'+g-h = 0 \) 
+
+Or \( h(x)=6xe^{-2x}+2 \) donc 
+
+\begin{align*}
+\frac{1}{2}g'-\frac{1}{2}(6xe^{-2x}+2)'+g-(6xe^{-2x}+2) = 0 & \implies \frac{1}{2}g'-\frac{1}{2}(6xe^{-2x})'+g-(6xe^{-2x}+2) =0\\
+&\implies\frac{1}{2}g'-(3e^{-2x}-6xe^{-2x})+g-(6xe^{-2x}+2) =0\\
+&\implies\frac{1}{2}g'+g-(3e^{-2x}+2)=0\\
+&\implies\frac{1}{2}g'+g=(3e^{-2x}+2)\\
+\text{Donc si \( g-h \) est solution de \( (E') \) alors \( g \) est solution de \( (E) \) }  
+\end{align*}				        
        % \item En déduire l'ensemble des solutions de $(E)$.\hfill \textbf{(0,5pt)}
     \end{enumerate}
    % \item Déterminer la solution $k$ de $(E)$ dont la courbe représentative $(C_{k})$ dans un repère orthonormal $(O;\vec{i},\vec{j})$ passe par le point O.\hfill \textbf{(0,25pt)}
