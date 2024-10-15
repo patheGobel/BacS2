@@ -22,9 +22,15 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows, shapes.geometric, fit}
 
-
 \usepackage[margin=2cm]{geometry}
+\usepackage{eso-pic}         % Pour ajouter des éléments en arrière-plan
 
+% Commande pour ajouter du texte en arrière-plan
+\AddToShipoutPicture{
+    \AtTextCenter{%
+        \makebox[0pt]{\rotatebox{45}{\textcolor[gray]{0.9}{\fontsize{5cm}{5cm}\selectfont Pathé BA}}}
+    }
+}
 \begin{document}
 
 \begin{minipage}{0.8\textwidth}
@@ -234,7 +240,7 @@ F'\begin{pmatrix} 1 \\ -2\end{pmatrix}
 4 & x-1 \\
 0 & y+2
 \end{vmatrix} = (4)(y+2) = 4y+8=0\implies y=-2
-\]
+\]	
 
 (D') est la droite (E'F'): y=-2 $\textbf{0,5}$
 
@@ -255,27 +261,6 @@ D'où $\mid z-(\frac{-1}{2}+\frac{3}{2}i)\mid$ Ainsi, on a $ C\left( \begin{pmat
 \end{enumerate}
 
 \textbf{Maintenant, je revendrai avec une deuxième méthode utilisant l'équation du cercle}
-
-\section*{\textcolor{green}{\underline{Exercice 2} (5 points) :}}
-
-Une entreprise fabrique des articles dans deux unités de production notées \( U_1 \) et \( U_2 \). L’unité \( U_1 \) assure 60\% de la production.
-
-On a constaté que :
-
-- 3\% des articles provenant de l’unité \( U_1 \) présentent un défaut de fabrication.
-
-- 8\% des articles provenant de l’unité \( U_2 \) présentent un défaut de fabrication.
-
-L’entreprise envisage de mettre en place un test de contrôle de ces articles avant leur mise en vente. Ce contrôle détecte et élimine 82\% des articles défectueux, mais il élimine également à tort 4\% des articles non défectueux. Les articles non éliminés sont alors mis en vente.
-
-L’entreprise souhaite que moins de 1\% des articles vendus soient défectueux.
-
-À l’aide des informations ci-dessus et des outils mathématiques au programme :
-\begin{enumerate}
-    \item Démontrer que 5\% des articles produits présentent un défaut de fabrication. \textbf{(02 points)}
-    \item En prenant au hasard un article fabriqué, montrer que la chance que cet article soit mis en vente après contrôle est de 0,921. \textbf{(02 points)}
-    \item Vérifier si ce contrôle permet à l’entreprise de réaliser son souhait. \textbf{(01 point)}
-\end{enumerate}
 
 \section*{\textcolor{green}{\underline{Correction Exercice 2} (5 points) :}}
 $P_{U_{1}}(D)=\frac{60}{100}=\frac{3}{5}$
@@ -556,14 +541,14 @@ D'après le tableau de variation, $\forall x\in \mathbb{R}_{+}^{*}$, $v(x) \geq 
 \end{enumerate}
 \end{enumerate}
 \subsection*{ \underline{PARTIE B } ( 8 points ) }
-\[
-\text{Soient f la fonction définie par} 
+\(
+\text{Soient f la fonction définie par <li>} 
 f(x)=
 \begin{cases}
 xe^{x}-x-1 \quad\quad  \text{ si }  x \leq 0\\
 x^{2}-1-2x\ln x \quad \text{ si } x > 0 
 \end{cases}
-\]
+\)
 et $C_{f}$ sa courbe représentative dans un repère orthonormé (O;$\vec{i}$;$\vec{j}$) d'unité 1 cm.
 \begin{enumerate}
 \item
@@ -589,7 +574,7 @@ Donc $Df_{2}=\mathbb{R}_{+}^{*}$
 D'où $Df=Df_{2}\cup Df_{1}=\mathbb{R}$
 
 finalement, $Df=\mathbb{R}$
-\item[b.] Etudions les limites de en $-\infty$ et en $+\infty$.\textbf{ 0,5 points}
+\item[b.] Etudions les limites de $f$ en $-\infty$ et en $+\infty$.\textbf{ 0,5 points}
 
 \textcolor{green}{\underline{En $-\infty$}}
 \[
